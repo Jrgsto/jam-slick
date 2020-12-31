@@ -1,0 +1,61 @@
+/* global.css */
+@import "elements.css";
+@import "custom.css";
+@tailwind base;
+@layer base {
+    .default-spacing {
+        @apply p-2 md:px-12 md:py-20 m-auto md:w-2/3 max-w-screen-lg;
+    }
+
+    h1 {
+        @apply py-16 text-4xl md:text-6xl;
+    }
+
+    h2 {
+        @apply py-10 text-3xl md:text-5xl font-semibold;
+    }
+
+    h3 {
+        @apply py-10 text-3xl md:text-5xl;
+    }
+
+    h4 {
+        @apply py-8 text-2xl md:text-3xl;
+    }
+    a {
+        @apply hover:font-normal;
+    }
+
+    html {
+        min-height: 100%;
+        position:relative;
+        overflow:auto;
+
+    }
+    body {
+        @apply font-thin;
+        height:100%;
+    }
+    #content {
+        height: 100%;
+        margin-bottom:300px;
+        padding-top:5rem;
+    }
+    #footer{
+        bottom:0;
+        height:250px;
+    }
+
+}
+
+
+
+@tailwind components;
+
+
+
+@tailwind utilities;
+
+
+
+

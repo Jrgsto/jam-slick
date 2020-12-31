@@ -1,0 +1,70 @@
+local_backend: true
+backend:
+  name: git-gateway
+  branch: dev # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow # Allows you to save drafts before publishing them
+media_folder: static/uploads # Media files will be stored in the repo under static/images/uploads
+public_folder: /uploads # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "benefits" # Used in routes, e.g., /admin/collections/benefits
+    label: "Benefits" # Used in the UI
+    folder: "static/benefits" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+  - name: "header" # Used in routes, e.g., /admin/collections/benefits
+    label: "Header" # Used in the UI
+    folder: "static/header" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "Header", name: "header", widget: "string" }
+      - { label: "SubHeader", name: "subheader", widget: "string" }
+      - { label: "Background Image", name: "image", widget: "image" }
+
+  - name: "intro" # Used in routes, e.g., /admin/collections/benefits
+    label: "Intro" # Used in the UI
+    folder: "static/intro" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "Video", name: "video", widget: "string" }
+      - { label: "Header", name: "header", widget: "string" }
+      - { label: "Text", name: "text", widget: "markdown" }
+
+  - name: "modules" # Used in routes, e.g., /admin/collections/benefits
+    label: "Module" # Used in the UI
+    folder: "static/modules" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "coach" # Used in routes, e.g., /admin/collections/benefits
+    label: "Coach" # Used in the UI
+    folder: "static/coach" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "Text", name: "text", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "testimonials" # Used in routes, e.g., /admin/collections/benefits
+    label: "Testimonials" # Used in the UI
+    folder: "static/testimonials" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Text", name: "text", widget: "string" }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+
+  - name: "faqs" # Used in routes, e.g., /admin/collections/benefits
+    label: "FAQs" # Used in the UI
+    folder: "static/faqs" # The path to the folder where our blog posts are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document
+      - { label: "question", name: "question", widget: "string" }
+      - { label: "answer", name: "answer", widget: "string" }

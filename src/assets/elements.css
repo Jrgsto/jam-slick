@@ -1,0 +1,39 @@
+/* elements.css */
+
+.highlight {
+    font-weight: bolder;
+    background: linear-gradient(104deg, rgba(130, 255, 173,0) 0.9%, rgba(130, 255, 173,1.25) 2.4%, rgba(130, 255, 173,0.5) 5.8%, rgba(130, 255, 173,0.1) 93%, rgba(130, 255, 173,0.7) 96%, rgba(130, 255, 1732,0) 98%), linear-gradient(183deg, rgba(130, 255, 173,0) 0%, rgba(130, 255, 173,0.3) 7.9%, rgba(130, 255, 173,0) 15%);
+    padding: 0.6em 13.7px;
+    -webkit-box-decoration-break: clone;
+    margin: 0;
+    border-radius: 7.5px;
+    text-shadow: -12px 12px 9.8px rgba(130, 255, 173,0.7), 21px -18.1px 7.3px rgba(255, 255, 255,1), -18.1px -27.3px 30px rgba(255, 255, 255,1);
+}
+
+.diagonal-box {
+    position: relative;
+    padding: 20px 0;
+    margin-top: -1px;
+}
+.diagonal-box:before {
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     transform: skewy(11deg);
+     transform-origin: 50% 0;
+     outline: 1px solid transparent;
+     backface-visibility: hidden;
+ }
+.diagonal-box .content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+    position: relative;
+}
+
+.bg-one:before {
+    background-image: linear-gradient(45deg, #dbe5ef, #d0efff );
+}

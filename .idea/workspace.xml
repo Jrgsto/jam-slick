@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/routes/contact.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/parallel-audio.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project-template.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/setupTypeScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/CloseButton.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Forms/Form.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Modals/Modal.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Buttons/ButtonRound.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Buttons/CloseButton.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Cards/ModalCard.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Cards/ModalCardDetails.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Cards/Module.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Forms/Form.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Modals/Modal.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Others/Arrow.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Others/SocialMedia.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Others/WavesAnimation.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Sections/FAQs/FAQ.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Templates/Sections/Testimonial/TestimonialCard.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/includes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/buttons.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/cards.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/forms.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.json.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.json.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/modals.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/others.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/benefits/1-1-sessions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/benefits/community.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/benefits/gruppencoaching.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cardDescription/card-1.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cardDescription/card-2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/cardDescription/card-3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/coach/map-text-hey-florian-hier-ich-bin-dj-produzent-und-helfe-dir-als-coach-mit-all-meiner-erfahrung-deine-musik-auf’s-nächste-level-zu-bringen-ich-habe-audiodesign-studiert-arbeite-seit-10-jahren-in-ableton-live-und-meine-releases-haben-mir-in-d.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/emails/confirmation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/emails/email-change.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/emails/invitation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/emails/recovery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/faqs/map-question-wie-funktioniert-das-parallel-audio-coaching-programm-answer-es-handelt-sich-um-ein-online-programm-in-dem-du-lernst-in-ableton-live-elektronische-musik-auf-einem-professionellen-niveau-zu-produzieren-du-lernst-dabei-deine-prod.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/faqs/map-question-wie-lange-dauert-das-coaching-programm-answer-über-die-dauer-des-programms-entscheidest-du-ganz-individuell-wenn-du-viel-zeit-investierst-schaffst-du-es-in-3-4-monaten-das-ist-aber-kein-muss-du-machst-es-in-deinem-eigenen-te.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/faqs/map-question-wie-lange-stehen-mir-die-inhalte-zur-verfügung-answer-es-gibt-keine-begrenzung-die-inhalte-stehen-dir-so-lange-zu-verfügung-wie-du-sie-nutzen-möchtest.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/header/map-header-this-is-a-new-test-image-uploads-header-background-jpg-subheader-new-subheader-not-used.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/intro/map-video-https-www-youtube-com-embed-pgh8gsvwd64-body-hi-meine-name-ist-florian-und-ich-helfe-dir-release-fertige-tracks-zu-produzieren-die-professionell-und-nach-deinem-eigenen-sound-klingen-n-ngemeinsam-bringen-wir-deine-elektronische-m.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/modules/arrangement.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/modules/creating-ideas.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/modules/mixdown.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/modules/sound-design.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/social/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/social/insta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/social/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/testimonials/ich-kann-das-programm-definitiv-weiterempfehlen.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/testimonials/klare-empfehlung.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/benefit-goal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/benefit-heroheader.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/benefit-phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/benefit-presentation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/coach-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/coach-small-florian.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/coach.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/header-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/logo-192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/logo-512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/module-arrangement.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/module-ideas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/module-mixing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/module-sounddesign.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/random-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/symbol-equalizer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/symbol-happy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/symbol-lautsprecher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/uploads/symbol-verstand.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TailwindCss.svelte" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kbNhJcsIaUtTuBmQbvwH6fAhu0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
+    <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/routes" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes" />
+      <recent name="$PROJECT_DIR$/src/components/Buttons" />
+      <recent name="$PROJECT_DIR$/static/Templates" />
+      <recent name="$PROJECT_DIR$/src/components/Forms" />
+      <recent name="$PROJECT_DIR$/src/components/Templates/Cards" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Templates/Others" />
+      <recent name="$PROJECT_DIR$/src/components/Modals" />
+      <recent name="$PROJECT_DIR$/src/components/Cards" />
+      <recent name="$PROJECT_DIR$/src/components/Buttons" />
+      <recent name="$PROJECT_DIR$/src/components/Templates/Sections" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="" />
+      <created>1605965449071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605965449071</updated>
+      <workItem from="1605965450087" duration="21698000" />
+      <workItem from="1605989101596" duration="1179000" />
+      <workItem from="1606033949263" duration="27919000" />
+      <workItem from="1606114984513" duration="3332000" />
+      <workItem from="1606143937055" duration="3625000" />
+      <workItem from="1606199940083" duration="4093000" />
+      <workItem from="1606638665268" duration="131000" />
+      <workItem from="1606639835152" duration="21299000" />
+      <workItem from="1606719015625" duration="4328000" />
+      <workItem from="1606752752987" duration="12372000" />
+      <workItem from="1606804436942" duration="28000" />
+      <workItem from="1606844403333" duration="14323000" />
+      <workItem from="1606926731507" duration="5758000" />
+      <workItem from="1607147519925" duration="2425000" />
+      <workItem from="1607150492031" duration="4654000" />
+      <workItem from="1608111207568" duration="9524000" />
+      <workItem from="1608190821368" duration="2381000" />
+      <workItem from="1608364389445" duration="11232000" />
+      <workItem from="1608469092844" duration="5344000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

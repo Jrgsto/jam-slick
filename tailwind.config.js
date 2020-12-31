@@ -21,20 +21,25 @@ module.exports = {
                 DEFAULT:'#000000',
                 light: '#333333'
             },
+            //yellow
             primary: {
-                DEFAULT: '#00549CFF',
-                light: '#d0efff',
+                DEFAULT: '#F3B114',
+                dark: '#D17428',
+                light: '#FBECDB',
             },
+            //green
             complementary: {
-                DEFAULT:'#dbe5ef'
+                DEFAULT:'#9C8E5E',
+                dark:'#58511C'
             },
+            //red
             spice: {
-                DEFAULT: '#EEA47FFF',
+                DEFAULT: '#E6535E',
                 light:'#FFD247',
-                extralight: '#ffb347'
             },
+            // not used
             tertiary: {
-                DEFAULT: '#FF605C'
+                DEFAULT: '#FBECDB'
             }
         },
         fontFamily: {

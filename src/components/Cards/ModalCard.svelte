@@ -32,7 +32,6 @@
 
 <div class="flex flex-col items-center custom-width p-4 rounded-lg bg-white shadow hover:bg-blue-light hover:bg-opacity-50 hover:shadow-2xl cursor-pointer" on:click={() => click(cardId)}>
     <div class="w-full flex items-center">
-        <img src="/uploads/benefit-phone.svg"/>
     </div>
         <div class="mb-2 font-bold lg:font-thin text-xl md:text-2xl px-4 text-center flex justify-end lg:justify-center">
             Das ist ein Test Title

@@ -9,7 +9,7 @@
         if (y > height) {
             return "bg-complementary shadow-lg"
         }
-        return "bg-white";
+        return "bg-primary-light";
     }
 
     const toggleDropdown = () => {

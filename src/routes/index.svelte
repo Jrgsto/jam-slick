@@ -13,7 +13,6 @@
     import {showDetail} from "../stores";
     import {modal} from "../stores";
     import SectionHeader from "components/Sections/SectionHeader.svelte";
-    export let fetchedData;
 </script>
 <style type="postcss">
 
@@ -22,15 +21,15 @@
 {#if $showForm}
     <Form/>
 {:else if $showDetail}
-    <Modal>
+    <div class="fixed h-screen w-screen">
         {#if $modal.component}
             <slot>
                 <svelte:component this={$modal.component}/>
             </slot>
         {/if}
-    </Modal>
+    </div>
 {/if}
-<div class="z-20">
+<div>
     <div class="md:h-screen default-spacing">
         <SectionHeader/>
     </div>

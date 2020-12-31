@@ -24,10 +24,10 @@
 <div id="navbar">
     <Nav/>
 </div>
-<div id="content">
+<div class="bg-primary-light" id="content">
     <slot></slot>
 </div>
-<div id="footer" class="w-full h-full bg-complementary p-4">
+<div id="footer" class="w-full h-full bg-primary-light p-4">
     <Footer></Footer>
 </div>
 </body>

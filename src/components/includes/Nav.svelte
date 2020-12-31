@@ -1,15 +1,22 @@
 <script>
     import ButtonRound from 'components/Buttons/ButtonRound.svelte';
+    import { fade, fly } from 'svelte/transition';
 
     let height = 100;
     let y;
     let showDropdown = false;
+    let showFixedNav = false;
 
     function changeClass(y) {
         if (y > height) {
+            showFixedNav = true;
             return "bg-complementary shadow-lg"
+
+        } else {
+            showFixedNav = false;
+            return "bg-primary-light";
         }
-        return "bg-primary-light";
+
     }
 
     const toggleDropdown = () => {
@@ -27,30 +34,44 @@
         width: 100%;
         top: 0;
         transition: all 500ms ease;
-        @apply h-20 md:h-auto;
+        @apply h-28;
     }
     .dropdown:hover .dropdown-menu {
-        display: block;
+        display: flex;
     }
 </style>
 
-<nav id="header" class='header-fix max-w-6xl {headerClass}'>
-    <div class="md:w-2/3 px-12 py-6 w-full mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-lg">
-        <div class="pl-4 flex items-center">
-            <a href ="/" class="cursor-pointer text-2xl lg:text-4xl">
-                <div>Logo</div>
+<nav id="header" class='h-100 header-fix max-w-6xl pt-6 {headerClass}'>
+    <div class="md:w-2/3 px-12 w-full flex flex-wrap justify-between m-auto max-w-screen-lg">
+        <div class="pl-4 flex flex-col">
+            <a href ="/" class="cursor-pointer text-2xl lg:text-4xl flex">
+                <div>
+                    <div class="text-2xl text-primary">JAM</div>
+                    <div class="text-2xl text-spice font-bold">SLICK</div>
+                </div>
+                {#if showFixedNav }
+                <div in:fly="{{ x: -100, duration: 500 }}" out:fade="{{	duration: 100}}" class="mb-auto">
+                <svg width="40" height="60" preserveAspectRatio="xMinYMin meet" viewBox="0 0 55 100">
+                    <use xlink:href="/uploads/brand-logo.svg#brand-vertical" />
+                </svg>
+                </div>
+                    {/if}
             </a>
-
+            {#if !showFixedNav}
+            <svg in:fly="{{ y: -100, duration: 500 }}" out:fade="{{	duration: 100}}" width="80" height="28" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
+                <use xlink:href="/uploads/brand-logo.svg#brand-horizontal" />
+            </svg>
+                {/if}
         </div>
-        <div class="block lg:hidden pr-4">
-            <button id="nav-toggle" class="flex items-center p-1 text-black">
+        <div class="flex lg:hidden pr-4">
+            <button id="nav-toggle" class="flex pt-6">
                 <svg class="fill-black h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <title>Menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
                 </svg>
             </button>
         </div>
-        <ul class="hidden list-reset lg:flex justify-end flex-1 items-center">
+            <ul class="hidden list-reset lg:flex justify-end flex-1 text-2xl pt-2 {showFixedNav ? 'text-primary-light' : 'text-complementary-dark'}">
             <li class="mr-3">
                 <div class="dropdown inline-block relative">
                     <a href="about" class="py-2 px-4 rounded inline-flex items-center">
@@ -59,7 +80,7 @@
                 </div>
             </li>
             <li class="mr-3">
-                <a class="inline-block py-2 px-4" href="contact">Kontakt</a>
+                <a class="inline-block py-2 px-4" href="contact">Projects</a>
             </li>
             <li>
                 <ButtonRound showArrow={true} color='bg-spice text-white' size="small">

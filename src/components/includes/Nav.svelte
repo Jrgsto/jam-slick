@@ -1,5 +1,5 @@
 <script>
-    import ButtonRound from 'components/Buttons/ButtonRound.svelte';
+    import Button from 'components/Buttons/Button.svelte';
     import { fade, fly } from 'svelte/transition';
 
     let height = 100;
@@ -44,7 +44,7 @@
 <nav id="header" class='h-100 header-fix max-w-6xl pt-6 {headerClass}'>
     <div class="md:w-2/3 px-12 w-full flex flex-wrap justify-between m-auto max-w-screen-lg">
         <div class="pl-4 flex flex-col">
-            <a href ="/" class="cursor-pointer text-2xl lg:text-4xl flex">
+            <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex">
                 <div>
                     <div class="text-2xl text-primary">JAM</div>
                     <div class="text-2xl text-spice font-bold">SLICK</div>
@@ -71,7 +71,7 @@
                 </svg>
             </button>
         </div>
-            <ul class="hidden list-reset lg:flex justify-end flex-1 text-2xl pt-2 {showFixedNav ? 'text-primary-light' : 'text-complementary-dark'}">
+            <ul class="hidden list-reset lg:flex justify-end flex-1 text-xl pt-2 {showFixedNav ? 'text-primary-light' : 'text-complementary-dark'}">
             <li class="mr-3">
                 <div class="dropdown inline-block relative">
                     <a href="about" class="py-2 px-4 rounded inline-flex items-center">
@@ -80,12 +80,12 @@
                 </div>
             </li>
             <li class="mr-3">
-                <a class="inline-block py-2 px-4" href="contact">Projects</a>
+                <a class="inline-block py-2 px-4 mr-4" href="contact">Projects</a>
             </li>
             <li>
-                <ButtonRound showArrow={true} color='bg-spice text-white' size="small">
+                <Button showArrow={true} color='bg-spice text-white' size="small">
                     <slot>Get in Touch!</slot>
-                </ButtonRound>
+                </Button>
             </li>
         </ul>
 

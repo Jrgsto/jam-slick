@@ -42,7 +42,7 @@
 </style>
 
 <nav id="header" class='h-100 header-fix max-w-6xl pt-6 {headerClass}'>
-    <div class="md:w-2/3 px-12 w-full flex flex-wrap justify-between m-auto max-w-screen-lg">
+    <div class="md:w-3/4 px-12 w-full flex flex-wrap justify-between m-auto">
         <div class="pl-4 flex flex-col">
             <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex">
                 <div>
@@ -82,7 +82,7 @@
             <li class="mr-3">
                 <a class="inline-block py-2 px-4 mr-4" href="contact">Projects</a>
             </li>
-            <li>
+            <li class="mt-2">
                 <Button showArrow={true} color='bg-spice text-white' size="small">
                     <slot>Get in Touch!</slot>
                 </Button>

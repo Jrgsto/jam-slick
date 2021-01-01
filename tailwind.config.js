@@ -43,8 +43,7 @@ module.exports = {
             }
         },
         fontFamily: {
-            sans: ['Graphik', 'sans-serif'],
-            serif: ['Merriweather', 'serif'],
+            lato: ['Lato', 'sans-serif'],
         },
         minHeight: {
             '0': '0',

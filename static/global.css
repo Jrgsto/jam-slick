@@ -2,45 +2,38 @@
 
 /* elements.css */
 
-.highlight {
-  font-weight: bolder;
-  background: linear-gradient(104deg, rgba(130, 255, 173,0) 0.9%, rgba(130, 255, 173,1.25) 2.4%, rgba(130, 255, 173,0.5) 5.8%, rgba(130, 255, 173,0.1) 93%, rgba(130, 255, 173,0.7) 96%, rgba(130, 255, 1732,0) 98%), linear-gradient(183deg, rgba(130, 255, 173,0) 0%, rgba(130, 255, 173,0.3) 7.9%, rgba(130, 255, 173,0) 15%);
-  padding: 0.6em 13.7px;
-  -webkit-box-decoration-break: clone;
-  margin: 0;
-  border-radius: 7.5px;
-  text-shadow: -12px 12px 9.8px rgba(130, 255, 173,0.7), 21px -18.1px 7.3px rgba(255, 255, 255,1), -18.1px -27.3px 30px rgba(255, 255, 255,1);
-}
-
-.diagonal-box {
+.speech-bubble {
   position: relative;
-  padding: 20px 0;
-  margin-top: -1px;
+  margin: .5em auto;
+  padding: 1em;
+  width: 10em; height: 4em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  font: 2em/4 Century Gothic, Verdana, sans-serif;
+  text-align: center;
 }
 
-.diagonal-box:before {
-  content: "";
+.speech-bubble:before, .speech-bubble:after {
   position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  transform: skewy(11deg);
-  transform-origin: 50% 0;
-  outline: 1px solid transparent;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  z-index: -1;
+  content: '';
 }
 
-.diagonal-box .content {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 1.5em;
-  position: relative;
+.speech-bubble:after {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe;
 }
 
-.bg-one:before {
-  background-image: linear-gradient(45deg, #dbe5ef, #d0efff );
+.speech-bubble:before {
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid .25em #629bdd;
+  bottom: .25em; left: 1.25em;
+  width: 0; height: 1em;
+  transform: rotate(45deg) skewX(75deg);
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -408,7 +401,7 @@ ul {
  */
 
 html {
-  font-family: Graphik, sans-serif; /* 1 */
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -592,7 +585,6 @@ video {
 
 .default-spacing {
   margin: auto;
-  max-width: 1024px;
   padding: 0.5rem;
 }
 
@@ -602,18 +594,20 @@ video {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    width: 66.666667%;
+    width: 75%;
   }
 }
 
 h1 {
+  font-family: Lato, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
+  letter-spacing: 0.05em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h1 {
     font-size: 3.75rem;
     line-height: 1;
@@ -621,28 +615,32 @@ h1 {
 }
 
 h2 {
+  font-family: Lato, sans-serif;
   font-weight: 600;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  letter-spacing: 0.05em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h2 {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
 h3 {
+  font-family: Lato, sans-serif;
   font-size: 1.875rem;
   line-height: 2.25rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  letter-spacing: 0.05em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h3 {
     font-size: 3rem;
     line-height: 1;
@@ -650,17 +648,28 @@ h3 {
 }
 
 h4 {
+  font-family: Lato, sans-serif;
   font-size: 1.5rem;
   line-height: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  letter-spacing: 0.05em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   h4 {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+}
+
+p {
+  font-family: Lato, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: 0.05em;
 }
 
 a:hover {
@@ -671,11 +680,11 @@ html {
   min-height: 100%;
   position:relative;
   overflow:auto;
+  font-family: Lato, sans-serif;
+  letter-spacing: 0.05em;
 }
 
 body {
-  font-weight: 100;
-  letter-spacing: 0.1em;
   height:100%;
 }
 
@@ -4796,12 +4805,8 @@ body {
   clear: none;
 }
 
-.font-sans {
-  font-family: Graphik, sans-serif;
-}
-
-.font-serif {
-  font-family: Merriweather, serif;
+.font-lato {
+  font-family: Lato, sans-serif;
 }
 
 .font-thin {
@@ -23551,12 +23556,8 @@ body {
     clear: none;
   }
 
-  .sm\:font-sans {
-    font-family: Graphik, sans-serif;
-  }
-
-  .sm\:font-serif {
-    font-family: Merriweather, serif;
+  .sm\:font-lato {
+    font-family: Lato, sans-serif;
   }
 
   .sm\:font-thin {
@@ -42228,12 +42229,8 @@ body {
     clear: none;
   }
 
-  .md\:font-sans {
-    font-family: Graphik, sans-serif;
-  }
-
-  .md\:font-serif {
-    font-family: Merriweather, serif;
+  .md\:font-lato {
+    font-family: Lato, sans-serif;
   }
 
   .md\:font-thin {
@@ -60905,12 +60902,8 @@ body {
     clear: none;
   }
 
-  .lg\:font-sans {
-    font-family: Graphik, sans-serif;
-  }
-
-  .lg\:font-serif {
-    font-family: Merriweather, serif;
+  .lg\:font-lato {
+    font-family: Lato, sans-serif;
   }
 
   .lg\:font-thin {
@@ -79582,12 +79575,8 @@ body {
     clear: none;
   }
 
-  .xl\:font-sans {
-    font-family: Graphik, sans-serif;
-  }
-
-  .xl\:font-serif {
-    font-family: Merriweather, serif;
+  .xl\:font-lato {
+    font-family: Lato, sans-serif;
   }
 
   .xl\:font-thin {
@@ -98259,12 +98248,8 @@ body {
     clear: none;
   }
 
-  .\32xl\:font-sans {
-    font-family: Graphik, sans-serif;
-  }
-
-  .\32xl\:font-serif {
-    font-family: Merriweather, serif;
+  .\32xl\:font-lato {
+    font-family: Lato, sans-serif;
   }
 
   .\32xl\:font-thin {

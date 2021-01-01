@@ -1,7 +1,8 @@
 <script context="module">
     const useConfig = false;
+
     export async function preload() {
-        if( useConfig) {
+        if (useConfig) {
             const response = await this.fetch('index.json');
             const fetchedData = await response.json();
             return {fetchedData};
@@ -13,6 +14,8 @@
     import {showDetail} from "../stores";
     import {modal} from "../stores";
     import SectionHeader from "components/Sections/SectionHeader.svelte";
+    import SectionWebsite from "components/Sections/SectionWebsite.svelte";
+    import HeaderBox from "components/HeaderBox.svelte";
 </script>
 <style type="postcss">
 
@@ -30,7 +33,11 @@
     </div>
 {/if}
 <div>
-    <div class="md:h-screen default-spacing">
+    <div class="default-spacing">
         <SectionHeader/>
+        <HeaderBox>
+            <h2>A website can be overwhelming...</h2>
+        </HeaderBox>
+        <SectionWebsite/>
     </div>
 </div>

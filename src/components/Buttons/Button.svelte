@@ -24,10 +24,10 @@
       }
    }
 </style>
-
-   <button on:click|preventDefault={handleClick} type="button" class="relative w-auto hover:bg-opacity-50 ease-in-out duration-100">
+<div>
+<button on:click|preventDefault={handleClick} type="button" class="relative w-auto hover:bg-opacity-50 ease-in-out duration-100">
       <div class="absolute -top-2 -left-2 border-2 border-spice w-full {buttonSize}"></div>
-      <div class="inline-block font-bold p-4 {buttonClass} {buttonSize} bg-spice flex items-center z-40">
+      <div class="inline-block font-bold pl-4 m-auto {buttonClass} {buttonSize} bg-spice flex items-center z-40">
          <div class="mr-2 text-white">
             <slot></slot>
          </div>
@@ -37,5 +37,6 @@
             </svg>
          {/if}
       </div>
-   </button>
+</button>
+</div>
 

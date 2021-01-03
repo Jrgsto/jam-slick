@@ -30,7 +30,7 @@ module.exports = {
             //green
             complementary: {
                 DEFAULT:'#9C8E5E',
-                dark:'#58511C'
+                dark: '#58511C'
             },
             //red
             spice: {

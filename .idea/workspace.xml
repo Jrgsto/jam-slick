@@ -23,18 +23,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/HeaderBox.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/ProcessCard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/ServiceCard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/ich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/underscore.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/elements.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/elements.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/elements.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HeaderBox.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderBox.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/uploads/website-header-desktop.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/uploads/website-header-desktop.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,18 +81,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Sections" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Cards" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Cards" />
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/static/uploads" />
       <recent name="$PROJECT_DIR$/src/components/Sections" />
       <recent name="$PROJECT_DIR$/src/components" />
-      <recent name="$PROJECT_DIR$/static/uploads" />
-      <recent name="$PROJECT_DIR$/src/routes" />
-      <recent name="$PROJECT_DIR$/src/components/Buttons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/Templates/Others" />
@@ -125,7 +131,7 @@
       <workItem from="1608469092844" duration="5344000" />
       <workItem from="1609404629721" duration="12000" />
       <workItem from="1609404657756" duration="22127000" />
-      <workItem from="1609488006738" duration="6218000" />
+      <workItem from="1609488006738" duration="38536000" />
     </task>
     <servers />
   </component>

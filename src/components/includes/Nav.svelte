@@ -41,8 +41,8 @@
     }
 </style>
 
-<nav id="header" class='h-100 header-fix max-w-6xl pt-6 {headerClass}'>
-    <div class="md:w-3/4 px-12 w-full flex flex-wrap justify-between m-auto">
+<nav id="header" class='h-100 header-fix pt-6 {headerClass}'>
+    <div class="flex flex-wrap justify-between default-spacing w-4/5">
         <div class="pl-4 flex flex-col">
             <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex">
                 <div>

@@ -8,7 +8,7 @@
     }
 </style>
 
-<div class="flex flex-col lg:flex-row justify-center z-40 default-spacing">
+<div class="flex flex-col lg:flex-row justify-center z-30 default-spacing">
     <div class="flex flex-col lg:block lg:mx-12">
         <SpeechBubble box="sb2">
             <p>What is the right

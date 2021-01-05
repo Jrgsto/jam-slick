@@ -10,9 +10,8 @@
     }
 </script>
 <script>
-    import {showForm} from "../stores";
-    import {showDetail} from "../stores";
-    import {modal} from "../stores";
+    import { fade } from 'svelte/transition';
+    import {showForm, showOverlay, modal} from "../stores";
     import SectionHeader from "components/Sections/SectionHeader.svelte";
     import SectionWebsite from "components/Sections/SectionWebsite.svelte";
     import HeaderBox from "components/HeaderBox.svelte";
@@ -20,73 +19,13 @@
     import SectionServices from "components/Sections/SectionServices.svelte";
     import SectionProcess from "components/Sections/SectionProcess.svelte";
     import SectionAboutMe from "components/Sections/SectionAboutMe.svelte";
+    import SectionTestimonials from "components/Sections/SectionTestimonials.svelte";
 </script>
-<style type="postcss">
-
-    .bg-left-1:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height:40vw;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url('/uploads/background-drama-left-1.png');
-        background-repeat: no-repeat;
-        background-size: 40%;
-        background-position: left;
-    }
-
-    .bg-left-2:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height:40vw;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url('/uploads/background-drama-left-2.png');
-        background-repeat: no-repeat;
-        background-size: 40%;
-        background-position: left;
-    }
-
-    .bg-right-1:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height:40vw;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url('/uploads/background-drama-right.png');
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: right top;
-        margin-top:-200px;
-    }
-
-    .bg-right-2:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        width: 100%;
-        height:40vw;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url('/uploads/background-drama-right-2.png');
-        background-repeat: no-repeat;
-        background-size: 50%;
-        background-position: right top;
-        right:-10vw;
-    }
-
-</style>
 
 {#if $showForm}
     <Form/>
-{:else if $showDetail}
-    <div class="fixed h-screen w-screen">
+{:else if $showOverlay}
+    <div transition:fade class="flex lg:hidden fixed h-screen w-screen z-40 bg-primary bg-opacity-90 p-8">
         {#if $modal.component}
             <slot>
                 <svelte:component this={$modal.component}/>
@@ -121,5 +60,9 @@
             <h2>And, well, that’s me...</h2>
         </HeaderBox>
         <SectionAboutMe></SectionAboutMe>
+        <HeaderBox>
+            <h2>What people say about my work...</h2>
+        </HeaderBox>
+        <SectionTestimonials></SectionTestimonials>
     </div>
 </div>

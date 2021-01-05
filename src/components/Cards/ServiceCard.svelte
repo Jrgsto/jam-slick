@@ -20,7 +20,7 @@
 </style>
 
 <div class="flex {position === 'right' ? 'flex-row-reverse' : ''} lg:w-3/4 lg:m-0 ">
-    <div class="flex-1 {position === 'right' ?'lg:ml-4' : 'lg:mr-2'} z-50">
+    <div class="flex-1 {position === 'right' ?'lg:ml-4' : 'lg:mr-2'} z-30">
         <slot>
         </slot>
         <ul class="list-none text-complementary-dark">

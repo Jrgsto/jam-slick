@@ -1,6 +1,5 @@
 /* global.css */
 @import "elements.scss";
-@import "custom.css";
 @tailwind base;
 @layer base {
     .default-spacing {

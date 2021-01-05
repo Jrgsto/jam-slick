@@ -1,39 +1,23 @@
-<script context="module">
 
-</script>
 <script>
-    import ModalCardDetails from './ModalCardDetails.svelte';
-    import {showDetail, modal} from "../../stores";
-    export let cardId;
+    import { fly, slide, blur } from 'svelte/transition';
+    import { quintOut } from 'svelte/easing';
+    export let isActive = false;
 
-    async function getContentData(id) {
-        const response = await self.fetch(`cards/${id}.json`);
-        return response.json();
-    }
-
-    const click = async (id) => {
-        $modal.component = ModalCardDetails
-        $modal.content = await getContentData(id);
-        $showDetail = true;
-
-    }
 </script>
 <style>
-    @media (min-width: 768px) {
-        .custom-width {
-            width: calc(33.5% - 1.5rem);
-        }
-    }
-    .custom-width:nth-child(2) {
-        @apply mx-0 my-8 lg:my-0 lg:mx-8;
-    }
 
 </style>
 
-<div class="flex flex-col items-center custom-width p-4 rounded-lg bg-white shadow hover:bg-blue-light hover:bg-opacity-50 hover:shadow-2xl cursor-pointer" on:click={() => click(cardId)}>
-    <div class="w-full flex items-center">
+<div class="bg-primary h-20 w-full z-20 hover:shadow-lg">
+    <div class="absolute top-5 right-5 pl-4 bg-primary-light border-primary border flex items-center z-30 h-20 w-full relative hover:shadow-lg ">
+        <slot name="teaser"></slot>
     </div>
-        <div class="mb-2 font-bold lg:font-thin text-xl md:text-2xl px-4 text-center flex justify-end lg:justify-center">
-            Das ist ein Test Title
+    {#if isActive}
+
+        <div transition:slide="{{ duration: 1000, 	easing: quintOut }}" class="hidden lg:flex cursor-default relative p-4 bg-primary border border-primary"></div>
+        <div in:blur="{{ duration: 800, easing: quintOut }}" out:blur="{{ duration: 500, easing: quintOut }}" class="hidden lg:flex absolute left-0 mx-4 ">
+        <div class="cursor-default p-4 bg-primary ml-4 mr-4 shadow-lg text-white"><slot name="text"></slot></div>
         </div>
+    {/if}
 </div>

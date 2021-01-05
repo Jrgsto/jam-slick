@@ -36,10 +36,6 @@
 
 
 </script>
-<style type="postcss">
-
-
-</style>
 
 <div class="flex flex-col default-spacing">
     <div class="flex flex-col md:flex-row justify-between">
@@ -83,7 +79,7 @@
     </div>
     <div class="flex justify-center mt-12 ">
         <div class="lg:w-20"></div>
-        <Button showArrow={true} color="mt-24 bg-spice text-white z-50">
+        <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
             <slot>
                 Get in touch
             </slot>

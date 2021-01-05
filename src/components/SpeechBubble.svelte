@@ -21,7 +21,7 @@
         }
 </script>
 
-<div style="--color: {color}; --bgColor: {bgColor} " class="box1 shadow-lg {box} bg-primary-light z-50"><slot></slot></div>
+<div style="--color: {color}; --bgColor: {bgColor} " class="box1 shadow-lg {box} bg-primary-light z-30"><slot></slot></div>
 
 
 <style>

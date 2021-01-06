@@ -14,7 +14,7 @@
 
         } else {
             showFixedNav = false;
-            return "bg-primary-light";
+            return "bg-tertiary";
         }
 
     }

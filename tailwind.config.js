@@ -19,27 +19,28 @@ module.exports = {
             },
             black: {
                 DEFAULT:'#000000',
-                light: '#333333'
+                light: '#373737'
             },
             //yellow
             primary: {
-                DEFAULT: '#F3B114',
+                DEFAULT: '#FFD88C',
                 dark: '#D17428',
-                light: '#FBECDB',
+                light: '#FFBC8C',
             },
             //green
             complementary: {
-                DEFAULT:'#9C8E5E',
-                dark: '#58511C'
+                DEFAULT:'#9BC1BC',
+                dark: '#59739B',
+                darkest: '#373737'
             },
             //red
             spice: {
-                DEFAULT: '#E6535E',
+                DEFAULT: '#ED6A5A',
                 light:'#FFD247',
             },
             // not used
             tertiary: {
-                DEFAULT: '#FBECDB'
+                DEFAULT: '#EDECEA'
             }
         },
         fontFamily: {

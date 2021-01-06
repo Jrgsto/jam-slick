@@ -3,8 +3,13 @@
 @tailwind base;
 @layer base {
     .default-spacing {
-        max-width:1200px;
+        max-width:1600px;
         @apply p-2 md:px-12 m-auto md:w-3/4;
+    }
+
+    .default-spacing-left {
+        max-width:1600px;
+        @apply p-2 md:pl-12 ml-auto md:w-3/4;
     }
 
     h1 {
@@ -35,7 +40,7 @@
         min-height: 100%;
         position:relative;
         overflow:auto;
-        @apply font-lato tracking-wider text-complementary-dark w-screen;
+        @apply font-lato tracking-wider text-black-light w-screen;
 
     }
     body {

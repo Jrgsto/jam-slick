@@ -24,7 +24,7 @@
 <div id="navbar">
     <Nav/>
 </div>
-<div class="bg-primary-light" id="content">
+<div class="bg-tertiary" id="content">
     <slot></slot>
 </div>
 <div id="footer" class="w-full h-full bg-primary-light p-4">

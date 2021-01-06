@@ -36,16 +36,12 @@
 <div>
     <div>
         <SectionHeader/>
-            <div class="bg-left-1"></div>
+            <div class="bg-left-1 -mt-64"></div>
             <HeaderBox>
                 <h2>A website can be overwhelming...</h2>
             </HeaderBox>
             <SectionWebsite/>
-        <HeaderBox>
-            <h2>I can help you to build a website...</h2>
-        </HeaderBox>
         <SectionBenefits></SectionBenefits>
-        <div class="bg-right-1"></div>
         <HeaderBox>
             <h2>And can help you with other stuff, too...</h2>
         </HeaderBox>

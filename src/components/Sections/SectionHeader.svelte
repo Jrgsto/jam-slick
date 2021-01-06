@@ -8,18 +8,18 @@
     }
 </style>
 
-<div class="flex default-spacing w-4/5 md:pt-24">
-    <div class="w-full font-bold p-4 text-primary-dark">
-        <h2>Focus on what matters to your business.</h2>
+<div class="flex default-spacing w-4/5 md:pt-24 h-screen">
+    <div class="w-full font-bold p-4 text-black-light">
+        <h2 class="z-40">Focus on what matters to your business.</h2>
         <h1 class="pt-0 rounded-lg mb-24 text-spice z-40">I do your website.</h1>
-            <Button showArrow={true} color="mt-24 bg-spice text-white z-50">
+            <Button showArrow={true} color="mt-24 bg-spice text-white z-40">
                 <slot>
                     Get in touch
                 </slot>
             </Button>
-            <div class="hidden lg:flex">
-                <div class="absolute flex justify-end z-40">
-                    <img class="lg:-mt-96 lg:w-2/3 h-auto z-40 opacity-80" src="/uploads/website-header-desktop.png" />
+            <div class="hidden lg:flex z-20">
+                <div class="absolute flex justify-end ">
+                    <img class="lg:-mt-96  lg:ml-96  opacity-80" src="/uploads/website-header-desktop.png" />
                 </div>
             </div>
     </div>

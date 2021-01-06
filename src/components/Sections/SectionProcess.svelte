@@ -41,7 +41,7 @@
     <div class="flex flex-col md:flex-row justify-between">
         <ProcessCard colorType="primary" free=true>
             <slot>
-                <div>Get to know each other</div>
+                <div>Get to know each other (and my process)</div>
             </slot>
         </ProcessCard>
         <ProcessCard colorType="primary" free=true>

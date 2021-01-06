@@ -25,8 +25,7 @@
     "gray-matter": "^4.0.2",
     "marked": "^1.2.5",
     "polka": "next",
-    "sirv": "^1.0.0",
-    "svelte-swipe": "^1.7.1"
+    "sirv": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -53,6 +52,7 @@
     "sapper": "^0.28.0",
     "svelte": "^3.17.3",
     "svelte-preprocess": "^4.6.1",
+    "svelte-swipe": "^1.7.2",
     "tailwindcss": "^2.0.2"
   }
 }

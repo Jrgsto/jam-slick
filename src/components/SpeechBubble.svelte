@@ -1,7 +1,6 @@
 <script>
         export let box;
         export let color;
-        export let hoverEffect = false;
         const bgColor = '#FBECDB';
         switch(box) {
             case "sb1":

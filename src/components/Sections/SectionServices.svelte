@@ -20,7 +20,7 @@
 
 </style>
 
-<div class="flex flex-col lg:items-center default-spacing w-4/5">
+<div class="flex flex-col default-spacing">
     <ServiceCard position="left" image="/uploads/service-content-design.svg" data="{data.content}">
         <slot>
             <h4 class="text-primary-dark pb-2">Web Content & Design</h4>

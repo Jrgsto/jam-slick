@@ -70,7 +70,7 @@
     </div>
     <div class="flex flex-col lg:flex-row flex-wrap justify-center w-full relative">
         {#each data as item}
-        <div id={item.id} on:click={() => handleClick(item.id)} class="m-8 cursor-pointer flex-1 w-2/3 {activeHoverElement === item.id ? 'h-40' : ''}">
+        <div id={item.id} on:click={() => handleClick(item.id)} class="mx-auto lg:mx-8 my-8  cursor-pointer flex-1 w-2/3 {activeHoverElement === item.id ? 'h-40' : ''}">
             <ModalCard isActive={activeHoverElement === item.id}>
                 <div class="text-primary" slot="teaser">
                     {item.title}

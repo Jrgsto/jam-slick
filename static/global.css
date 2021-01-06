@@ -121,7 +121,6 @@
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: right top;
-  right:-10vw;
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -772,10 +771,13 @@ html {
   color: rgba(88, 81, 28, 1);
   color: rgba(88, 81, 28, var(--tw-text-opacity));
   letter-spacing: 0.05em;
+  width: 100vw;
 }
 
 body {
   height:100%;
+  width:100%;
+  overflow-x: hidden;
 }
 
 #content {

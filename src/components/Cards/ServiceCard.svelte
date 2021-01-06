@@ -13,13 +13,12 @@
     }
     img {
         max-height:300px;
-
         @apply h-44 lg:h-72;
     }
 
 </style>
 
-<div class="flex {position === 'right' ? 'flex-row-reverse' : ''} lg:w-3/4 lg:m-0 ">
+<div class="flex items-center justify-center lg:justify-start lg:items-start {position === 'right' ? 'flex-row-reverse' : ''} ">
     <div class="flex-1 {position === 'right' ?'lg:ml-4' : 'lg:mr-2'} z-30">
         <slot>
         </slot>
@@ -29,5 +28,5 @@
             {/each}
         </ul>
     </div>
-    <img class="opacity-20 lg:opacity-100 absolute w-full h-48 lg:relative flex-1" src="{image}"/>
+    <img class="opacity-20 lg:opacity-100 absolute h-48 lg:relative flex-1" src="{image}"/>
 </div>

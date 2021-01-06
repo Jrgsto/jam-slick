@@ -31,20 +31,19 @@
     .header-fix {
         position: fixed;
         z-index: 80;
-        width: 100%;
         top: 0;
         transition: all 500ms ease;
-        @apply h-28;
+        @apply h-24 w-screen;
     }
     .dropdown:hover .dropdown-menu {
         display: flex;
     }
 </style>
 
-<nav id="header" class='h-100 header-fix pt-6 {headerClass}'>
-    <div class="flex flex-wrap justify-between default-spacing w-4/5">
+<nav id="header" class="header-fix p-auto {headerClass}">
+    <div class="flex flex-wrap justify-between items-center default-spacing w-4/5 h-24">
         <div class="pl-4 flex flex-col">
-            <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex">
+            <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex relative">
                 <div>
                     <div class="text-2xl text-primary">JAM</div>
                     <div class="text-2xl text-spice font-bold">SLICK</div>
@@ -58,13 +57,13 @@
                     {/if}
             </a>
             {#if !showFixedNav}
-            <svg in:fly="{{ y: -100, duration: 500 }}" out:fade="{{	duration: 100}}" width="80" height="28" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
+            <svg class="-bottom-2 absolute" in:fly="{{ y: -100, duration: 500 }}" out:fade="{{	duration: 100}}" width="80" height="28" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
                 <use xlink:href="/uploads/brand-logo.svg#brand-horizontal" />
             </svg>
                 {/if}
         </div>
         <div class="flex lg:hidden pr-4">
-            <button id="nav-toggle" class="flex pt-6">
+            <button id="nav-toggle" class="flex">
                 <svg class="fill-black h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <title>Menu</title>
                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>

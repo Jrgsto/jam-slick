@@ -10,7 +10,7 @@
     function changeClass(y) {
         if (y > height) {
             showFixedNav = true;
-            return "bg-complementary shadow-lg"
+            return "shadow-lg"
 
         } else {
             showFixedNav = false;
@@ -35,12 +35,21 @@
         transition: all 500ms ease;
         @apply h-24 w-screen;
     }
+
+    .background {
+        background-image: url('/uploads/background-raster.png');
+    }
+
+    .background-blue {
+        background-image: url('/uploads/background-raster-blue.png');
+    }
+
     .dropdown:hover .dropdown-menu {
         display: flex;
     }
 </style>
 
-<nav id="header" class="header-fix p-auto {headerClass}">
+<nav id="header" class="header-fix p-auto {headerClass} {!showFixedNav ? 'background' : 'background-blue'}">
     <div class="flex flex-wrap justify-between items-center default-spacing w-4/5 h-24">
         <div class="pl-4 flex flex-col">
             <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex relative">
@@ -70,7 +79,7 @@
                 </svg>
             </button>
         </div>
-            <ul class="hidden list-reset lg:flex justify-end flex-1 text-xl pt-2 {showFixedNav ? 'text-primary-light' : 'text-complementary-dark'}">
+            <ul class="hidden list-reset lg:flex justify-end flex-1 text-xl pt-2 {showFixedNav ? 'text-white' : 'text-complementary-dark'}">
             <li class="mr-3">
                 <div class="dropdown inline-block relative">
                     <a href="about" class="py-2 px-4 rounded inline-flex items-center">

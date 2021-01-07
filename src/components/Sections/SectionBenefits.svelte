@@ -1,47 +1,74 @@
 <script>
+
+
+    let offsetHeight;
+
 </script>
 <style type="postcss">
 
-    .list-symbol {
-        @apply absolute top-0 font-lato text-2xl font-bold pl-2 lg:pl-4;
-    }
 
     .container-process {
-        height: 60vh;
-
+            height: var(--height);
     }
 
 </style>
-<div class="default-spacing w-2/3">
-    <div class="w-full relative mt-12 pb-12 h-full md:h-auto z-30 text-black-light">
-        <div class="container-process border border-spice w-full z-30"></div>
-        <div class="p-8 flex-col flex absolute top-5 left-5 inline-block font-bold m-auto bg-tertiary border border-spice container-process w-full">
-            <h2 class="pb-0">I can help you to build a website...</h2>
-            <div class="flex m-auto">
-            <div class="flex-1 flex-col mr-20">
-                <div class="relative mb-24">
-                    <span class="absolute -top-10 -left-4">1</span>
-                    targets the needs of your customers and converts.
+<div class="default-width relative flex justify-center my-24">
+        <div style="--height:{offsetHeight + 'px'}" class="hidden lg:block absolute -left-10 -top-5 container-process border border-spice lg:w-1/2 m-auto left-0 right-0"></div>
+        <div bind:offsetHeight={offsetHeight} class="p-20 flex-col relative flex z-30 font-bold bg-tertiary lg:border border-spice lg:w-1/2">
+            <h2 class="pt-0">I can help you to build a website...</h2>
+            <div class="flex-col flex mt-12 m-auto">
+                <div class="flex mb-24 lg:mb-0">
+                    <div class="flex-1 relative flex mb-12">
+                        <img class="absolute -top-10 -left-5" width="20%" src="/uploads/shape1.svg"/>
+                        <div class="text-2xl font-bold -mt-6">
+                            1.
+                        </div>
+                        <div class="ml-2">
+                            targets the needs of your customers and converts.
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex flex-1"></div>
                 </div>
-                <div class="relative">
-                    <span class="absolute -top-10 -left-4">2</span>
-                    does not require you to have any technical knowledge.
+                <div class="flex mb-24 lg:mb-0">
+                    <div class="hidden lg:flex flex-1">
+                    </div>
+                    <div class="flex-1 relative flex mb-12">
+                        <img class="absolute -top-10 -left-5" width="20%" src="/uploads/shape2.svg"/>
+                        <div class="text-2xl font-bold -mt-6">
+                            2.
+                        </div>
+                        <div class="ml-2">
+                            targets the needs of your customers and converts.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="flex-1 flex-col mt-20 m-auto">
-                <div class="relative mb-24">
-                    <span class="absolute -top-10 -left-4">1</span>
-                    targets the needs of your customers and converts.
+                <div class="flex mb-24 lg:mb-0">
+                    <div class="flex-1 relative flex mb-12">
+                        <img class="absolute -top-10 -left-5" width="20%" src="/uploads/shape3.svg"/>
+                        <div class="text-2xl font-bold -mt-6">
+                            3.
+                        </div>
+                        <div class="ml-2">
+                            does not require you to have any technical knowledge.
+                        </div>
+                    </div>
+                    <div class="hidden lg:flex flex-1"></div>
                 </div>
-                <div class="relative">
-                    <span class="absolute -top-10 -left-4">2</span>
-                    does not require you to have any technical knowledge.
+                <div class="flex mb-24 lg:mb-0">
+                    <div class="hidden lg:flex flex-1">
+                    </div>
+                    <div class="flex-1 relative flex mb-12">
+                        <img class="absolute -top-10 -left-5" width="20%" src="/uploads/shape4.svg"/>
+                        <div class="text-2xl font-bold -mt-6">
+                            4.
+                        </div>
+                        <div class="ml-2">
+                            targets the needs of your customers and converts.
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
         </div>
-        <svg class="bottom-0 left-12 absolute" width="200" height="68" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
-            <use xlink:href="/uploads/brand-logo.svg#brand-horizontal" />
-        </svg>
+        <img class="hidden md:block bottom-0 left-12 absolute" src="/uploads/triangle.svg"/>
+        <img class="hidden md:block top-10 -right-16 absolute z-20" src="/uploads/circlesborder.svg"/>
     </div>
 </div>

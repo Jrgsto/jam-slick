@@ -23,16 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/uploads/background-raster-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/background-raster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/circlesborder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/shape1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/shape2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/shape3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/shape4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/triangle.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderBox.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderBox.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
@@ -75,17 +77,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Cards" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/uploads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/uploads" />
       <recent name="$PROJECT_DIR$/src/components/Cards" />
       <recent name="$PROJECT_DIR$/src/components/Sections" />
       <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/static/uploads" />
       <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -131,6 +133,8 @@
       <workItem from="1609918701463" duration="2514000" />
       <workItem from="1609923275279" duration="6000" />
       <workItem from="1609943741171" duration="6647000" />
+      <workItem from="1610005268635" duration="236000" />
+      <workItem from="1610044369003" duration="6223000" />
     </task>
     <servers />
   </component>

@@ -27,13 +27,11 @@ module.exports = {
                 dark: '#D17428',
                 light: '#FFBC8C',
             },
-            //green
             complementary: {
                 DEFAULT:'#9BC1BC',
                 dark: '#59739B',
                 darkest: '#373737'
             },
-            //red
             spice: {
                 DEFAULT: '#ED6A5A',
                 light:'#FFD247',

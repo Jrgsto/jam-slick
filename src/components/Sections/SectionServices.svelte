@@ -14,13 +14,12 @@
 <style type="postcss">
 
     div > div {
-        height:35vh;
         @apply mb-24;
     }
 
 </style>
 
-<div class="flex flex-col default-spacing">
+<div class="flex flex-col default-spacing mb-32 lg:mb-44">
     <div>
         <BorderdCard width="lg:w-full">
             <ServiceCard position="left" image="/uploads/service-content-design.svg" data="{data.content}">

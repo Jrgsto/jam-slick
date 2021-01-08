@@ -18,6 +18,7 @@
 
     import Button from "../Buttons/Button.svelte";
     import TestimonialCard from "../Cards/TestimonialCard.svelte";
+    import BorderdCard from "../Cards/BorderdCard.svelte";
 
     export const testimonials = [{
         name: 'Max',
@@ -53,10 +54,12 @@
         transform: translateX(-50%);
         @apply absolute bottom-5 left-1/2;
     }
+
     .dot {
         border-radius: 8px;
         @apply bg-complementary-dark w-4 h-4 m-2 inline-block;
     }
+
     .dot.active {
         position: absolute;
         @apply bg-primary
@@ -65,7 +68,7 @@
 
 </style>
 <div class="flex flex-col default-spacing">
-    <div class="flex w-full h-80 w-80">
+    <div class="flex w-full h-80 w-80 lg:hidden">
         <Swipeable numScreens="2" let:current bind:progress={introProgress}>
             {#each testimonials as item,index}
                 <section class:current={current == index && zoomOut}>
@@ -73,52 +76,43 @@
                          style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"
                     >
                         <div class="lg:flex w-full justify-center">
-                            <TestimonialCard>
-                                <span slot="firstname">{item.name}</span>
-                                <span slot="text">{item.text}</span>
-                            </TestimonialCard>
+                            <BorderdCard>
+                                <div class="p-12 flex-col">
+                                    <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
+                                    <div class="mb-4">{item.text}</div>
+                                    <div class="text-spice">
+                                        {item.name}
+                                    </div>
+                                </div>
+                            </BorderdCard>
                         </div>
                     </div>
                 </section>
             {/each}
-            <div class="hidden md :flex dots">
-                <div class="dot active" style="left: {$introProgress * 2}rem"></div>
-                <div class="dot"></div><div class="dot"></div>
-            </div>
-
-
         </Swipeable>
-
-        <!--{#each testimonials as item}-->
-        <!--        <div class="hidden lg:flex w-full lg:w-1/2">-->
-        <!--            <TestimonialCard>-->
-        <!--                <span slot="firstname">{item.name}</span>-->
-        <!--                <span slot="text">{item.text}</span>-->
-        <!--            </TestimonialCard>-->
-        <!--        </div>-->
-        <!--{/each}-->
-        <!--<div class=" lg:hidden swipe-holder">-->
-        <!--    <Swipe {...swipeConfig}>-->
-        <!--        {#each testimonials as item}-->
-        <!--        <SwipeItem>-->
-        <!--                <div class="h-full w-full">-->
-        <!--                    <TestimonialCard>-->
-        <!--                        <span slot="firstname">{item.name}</span>-->
-        <!--                        <span slot="text">{item.text}</span>-->
-        <!--                    </TestimonialCard>-->
-        <!--                </div>-->
-        <!--        </SwipeItem>-->
-        <!--        {/each}-->
-        <!--    </Swipe>-->
-        <!--</div>-->
-
     </div>
-    <div class="flex justify-center mt-12 ">
-        <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
-            <slot>
-                Get in touch
-            </slot>
-        </Button>
+
+    <div class="hidden lg:flex w-full justify-center">
+        {#each testimonials as item}
+            <div class="lg:mr-12">
+            <BorderdCard>
+                <div class="p-12 flex-col">
+                    <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
+                    <div class="mb-4">{item.text}</div>
+                    <div class="text-spice">
+                        {item.name}
+                    </div>
+                </div>
+            </BorderdCard>
+            </div>
+        {/each}
     </div>
+
 </div>
-
+<div class="flex justify-center mt-12 ">
+    <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
+        <slot>
+            Get in touch
+        </slot>
+    </Button>
+</div>

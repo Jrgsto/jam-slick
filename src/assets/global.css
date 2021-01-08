@@ -63,6 +63,9 @@
     #footer{
         bottom:0;
         height:250px;
+        background-image: url('/uploads/background-raster.png');
+        background-repeat: repeat;
+
     }
 
     hr {

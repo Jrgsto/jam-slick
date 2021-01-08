@@ -2,30 +2,33 @@
 
 </script>
 <script>
-    export let colorType;
     export let free = false;
-    export let single = false;
-    let textColor = `text-${colorType}`;
-    let borderColor = `border-${colorType}`;
-    let bgColor = `bg-${colorType}`;
+    export let special = false;
+    export let contact = false;
+
+    let style = special ? 'bg-complementary-dark text-white' : 'bg-white';
 
 </script>
 <style>
 
 </style>
 
-<div class="flex-1 flex flex-col lg:flex-row items-center lg:items-start justify-center">
-        <div class="w-20">
-            {#if free}
-                <img src="/uploads/free-text.png"/>
-            {/if}
-        </div>
-    <div class="w-56 relative mt-12 pb-12 h-full md:h-auto z-30">
-        <div class="{bgColor} h-32 w-full z-30 shadow-xl"></div>
-        <div class="absolute top-5 right-5 inline-block font-bold m-auto bg-primary-light {borderColor} border-2 flex items-center h-32 w-full shadow-xl">
-            <div class="mr-2 {textColor} text-center w-full">
-                <slot></slot>
+<div class="flex flex-col lg:flex-row items-center lg:items-start justify-center z-30">
+    <div class="w-20 flex justify-center ">
+        {#if free}
+            <div class="bg-spice shadow-lg text-white m-auto p-2">
+            FREE!
             </div>
+        {/if}
+    </div>
+    <div class="w-56 my-4">
+        <div class="{style} w-full z-30 shadow-xl p-8 font-bold">
+            <slot></slot>
         </div>
+        {#if contact}
+            <div class="bg-complementary-dark bg-opacity-40 shadow-xl p-8">
+                <span> You can</span> <a href="contact" class="animated-link hover:font-bold underline cursor-pointer font-bold"> contact me here </a><span> directly. I’ll get back to you shortly!</span>
+            </div>
+        {/if}
     </div>
 </div>

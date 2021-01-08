@@ -23,11 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Cards/BorderdCard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/quote.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/elements.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/BorderdCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/BorderdCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/ModalCard.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/ProcessCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ProcessCard.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Cards/ServiceCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ServiceCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +143,9 @@
       <workItem from="1609943741171" duration="6647000" />
       <workItem from="1610005268635" duration="236000" />
       <workItem from="1610044369003" duration="6319000" />
-      <workItem from="1610091950097" duration="9855000" />
+      <workItem from="1610091950097" duration="10227000" />
+      <workItem from="1610109687268" duration="7000" />
+      <workItem from="1610116392869" duration="8732000" />
     </task>
     <servers />
   </component>

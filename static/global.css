@@ -123,6 +123,50 @@
   background-position: right top;
 }
 
+.animated-button:hover svg {
+  -webkit-animation: neon4 1s ease-in-out infinite alternate;
+          animation: neon4 1s ease-in-out infinite alternate;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow)
+}
+
+.animated-text:hover {
+  -webkit-animation: neon4 1s ease-in-out infinite alternate;
+          animation: neon4 1s ease-in-out infinite alternate;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
+}
+
+.animated-link:hover {
+  -webkit-animation: neon4 1s ease-in-out infinite alternate;
+          animation: neon4 1s ease-in-out infinite alternate;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 rgba(0,0,0,0), 0 0 rgba(0,0,0,0), var(--tw-shadow);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 rgba(0,0,0,0)), var(--tw-ring-shadow, 0 0 rgba(0,0,0,0)), var(--tw-shadow);
+}
+
+@-webkit-keyframes neon4 {
+  from {
+    filter: drop-shadow(0 0 10px #fff)drop-shadow( 0 0 10px #fff)
+  }
+
+  to {
+    filter: drop-shadow(0 0 0px #fff)drop-shadow( 0 0 5px #fff)
+  }
+}
+
+@keyframes neon4 {
+  from {
+    filter: drop-shadow(0 0 10px #fff)drop-shadow( 0 0 10px #fff)
+  }
+
+  to {
+    filter: drop-shadow(0 0 0px #fff)drop-shadow( 0 0 5px #fff)
+  }
+}
+
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
@@ -814,6 +858,8 @@ body {
 #footer{
   bottom:0;
   height:250px;
+  background-image: url('/uploads/background-raster.png');
+  background-repeat: repeat;
 }
 
 hr {

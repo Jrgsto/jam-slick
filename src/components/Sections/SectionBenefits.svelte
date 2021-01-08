@@ -3,7 +3,7 @@
 
 
 </script>
-<div class="relative flex justify-center my-24 default-spacing">
+<div class="relative flex justify-center mb-32 lg:mb-44 default-spacing">
     <BorderedCard width="lg:w-1/2">
         <div class="flex-col flex p-20">
             <div class="flex mb-12">

@@ -52,9 +52,6 @@
         </HeaderBox>
         <SectionProcess></SectionProcess>
         <div class="bg-right-2"></div>
-        <HeaderBox>
-            <h2>And, well, that’s me...</h2>
-        </HeaderBox>
         <SectionAboutMe></SectionAboutMe>
         <HeaderBox>
             <h2>What people say about my work...</h2>

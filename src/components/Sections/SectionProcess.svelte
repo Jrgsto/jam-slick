@@ -5,12 +5,13 @@
     export const data = [{
         name: 'Get to know each other',
         free: true,
-        special: true
+        special: false,
+        contact: true
     },
         {
             name: 'Understanding your needs',
             free: true,
-            special: true
+            special: false,
         },
         {
             name: 'Commitments',
@@ -37,54 +38,20 @@
 
 </script>
 
-<div class="flex flex-col default-spacing">
-    <div class="flex flex-col md:flex-row justify-between">
-        <ProcessCard colorType="primary" free=true>
-            <slot>
-                <div>Get to know each other (and my process)</div>
-            </slot>
-        </ProcessCard>
-        <ProcessCard colorType="primary" free=true>
-            <slot>
-                <div>Understanding your needs</div>
-            </slot>
-        </ProcessCard>
-    </div>
-    <div class="flex flex-wrap justify-center default-spacing" >
-            <ProcessCard colorType="complementary" special=true single=true>
-                <slot>
-                    <div>Commitment</div>
-                </slot>
+<div class="flex flex-col default-spacing mb-32 lg:mb-44">
+    <div class="flex flex-col justify-between">
+        {#each data as step}
+            <ProcessCard free={step.free} special={step.special} contact={step.contact ? true : false}>
+                <div>{step.name}</div>
             </ProcessCard>
+        {/each}
+        <div class="flex justify-center mt-12">
+            <div class="lg:w-20"></div>
+            <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
+                <slot>
+                    Get in touch
+                </slot>
+            </Button>
+        </div>
     </div>
-    <div class="flex flex-col md:flex-row justify-between">
-        <ProcessCard colorType="primary">
-            <slot>
-                <div>Definition of Project & Deliverables</div>
-            </slot>
-        </ProcessCard>
-        <ProcessCard colorType="primary">
-            <slot>
-                <div>Project Phase</div>
-            </slot>
-        </ProcessCard>
-    </div>
-    <div class="flex flex-wrap justify-center default-spacing">
-            <ProcessCard colorType="primary" single=true>
-            <slot>
-                <div>Follow up &
-                    Fine tuning</div>
-            </slot>
-        </ProcessCard>
-    </div>
-    <div class="flex justify-center mt-12 ">
-        <div class="lg:w-20"></div>
-        <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
-            <slot>
-                Get in touch
-            </slot>
-        </Button>
-    </div>
-
-
 </div>

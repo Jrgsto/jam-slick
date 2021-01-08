@@ -1,26 +1,27 @@
 <script>
         export let box;
         export let color;
+        export let colorSchema;
         const bgColor = '#FBECDB';
-        switch(box) {
-            case "sb1":
-                color = '#D17428';
+        switch(colorSchema) {
+            case "bg-complementary":
+                color = '#9BC1BC';
                 break;
-            case "sb2":
-                color = '#F3B114';
+            case "bg-complementary-dark":
+                color = '#59739B';
                 break;
-            case "sb3":
-                color = '#58511C';
+            case "bg-spice":
+                color = '#ED6A5A';
                 break;
-            case "sb4":
-                color = '#9C8E5E';
+            case "bg-primary-light":
+                color = '#FFBC8C';
                 break;
             default:
                 color='var(--bgColor)';
         }
 </script>
 
-<div style="--color: {color}; --bgColor: {bgColor} " class="box1 shadow-lg {box} bg-primary-light z-30"><slot></slot></div>
+<div style="--color: {color}; --bgColor: {bgColor} " class="box1 shadow-lg {box} bg-primary-light z-30 flex items-center justify-center"><slot></slot></div>
 
 
 <style>

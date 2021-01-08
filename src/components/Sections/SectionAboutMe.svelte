@@ -1,23 +1,27 @@
 <script>
-    import ModalCard from "../Cards/ModalCard.svelte";
     import ModalCardDetails from "../Cards/ModalCardDetails.svelte";
     import {modal, showOverlay} from "../../stores";
-
+    import BorderdCard from "../Cards/BorderdCard.svelte";
+    import {fade} from 'svelte/transition';
     let activeHoverElement = "";
+    let contentToShow = null;
 
     const handleClick = (id) => {
-        if(activeHoverElement === id) {
+        if (activeHoverElement === id) {
             $modal.component = null
             $modal.title = ''
             $modal.text = ''
             $showOverlay = false;
-            return activeHoverElement ="";
+            contentToShow = null;
+            return activeHoverElement = "";
         }
         $modal.component = ModalCardDetails
         $modal.title = data.filter((item => item.id === id))[0].title;
-        $modal.text = data.filter((item => item.id === id))[0].text;
+        contentToShow = data.filter((item => item.id === id))[0].text;
+        $modal.text = contentToShow;
         activeHoverElement = id;
         $showOverlay = true;
+
     }
 
     const data = [
@@ -44,12 +48,8 @@
 
     ]
 </script>
-<style type="postcss">
 
-
-</style>
-
-<div class="flex flex-col default-spacing">
+<div class="flex flex-col default-spacing mb-32 lg:mb-44">
     <div class="flex flex-wrap justify-center lg:justify-start">
         <div class="w-64 h-64 flex mb-8">
             <div class="group w-full h-full rounded-full overflow-hidden shadow-lg text-center bg-purple table c">
@@ -59,30 +59,28 @@
             </div>
         </div>
         <div class="ml-4">
-           <p>
-                Hello and welcome!
-           </p>
+            <h2>And well, thats me...</h2>
             <div class="mb-12 ml-4">
                 My name is Joerg and
             </div>
         </div>
-
     </div>
-    <div class="flex flex-col lg:flex-row flex-wrap justify-center w-full relative">
+    <div class="flex flex-col lg:flex-row flex-wrap justify-center w-full">
         {#each data as item}
-        <div id={item.id} on:click={() => handleClick(item.id)} class="mx-auto lg:mx-8 my-8  cursor-pointer flex-1 w-2/3 {activeHoverElement === item.id ? 'h-40' : ''}">
-            <ModalCard isActive={activeHoverElement === item.id}>
-                <div class="text-primary" slot="teaser">
-                    {item.title}
-                </div>
-                <p class="text-base" slot="text">
-                    {item.text}
-                </p>
-            </ModalCard>
-        </div>
+            <div id={item.id} on:click={() => handleClick(item.id)}
+                 class=" lg:mx-8 my-8 cursor-pointer flex-1 h-24">
+                <BorderdCard containerClass="bg-spice text-white">
+                    <div class="m-auto animated-text">
+                        {item.title}
+                    </div>
+                </BorderdCard>
+            </div>
         {/each}
+        {#if contentToShow}
+            <div in:fade class="hidden mx-8 lg:block w-full bg-spice text-white p-12 w-2/3">
+                {contentToShow}
+            </div>
+        {/if}
     </div>
-
-
 </div>
 

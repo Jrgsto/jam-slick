@@ -113,3 +113,28 @@
     background-size: 50%;
     background-position: right top;
 }
+
+.animated-button:hover svg {
+    animation: neon4 1s ease-in-out infinite alternate;
+    @apply shadow-2xl
+}
+
+.animated-text:hover {
+    animation: neon4 1s ease-in-out infinite alternate;
+    @apply shadow-2xl;
+}
+
+.animated-link:hover {
+    animation: neon4 1s ease-in-out infinite alternate;
+    @apply shadow-2xl;
+}
+
+
+@keyframes neon4 {
+    from {
+        filter: drop-shadow(0 0 10px #fff)drop-shadow( 0 0 10px #fff)
+    }
+    to {
+        filter: drop-shadow(0 0 0px #fff)drop-shadow( 0 0 5px #fff)
+    }
+}

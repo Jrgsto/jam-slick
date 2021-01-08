@@ -23,20 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/uploads/background-raster-blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/background-raster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/circlesborder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/shape1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/shape2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/shape3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/shape4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/uploads/triangle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards/BorderdCard.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards/ServiceCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/ServiceCard.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +43,7 @@
         <option value="TailwindCss.svelte" />
         <option value="JavaScript File" />
         <option value="Swipeable.svelte" />
+        <option value="BorderdCard.svelte" />
       </list>
     </option>
   </component>
@@ -134,7 +126,8 @@
       <workItem from="1609923275279" duration="6000" />
       <workItem from="1609943741171" duration="6647000" />
       <workItem from="1610005268635" duration="236000" />
-      <workItem from="1610044369003" duration="6223000" />
+      <workItem from="1610044369003" duration="6319000" />
+      <workItem from="1610091950097" duration="9855000" />
     </task>
     <servers />
   </component>

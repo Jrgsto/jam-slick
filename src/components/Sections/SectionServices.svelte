@@ -1,5 +1,6 @@
 <script>
     import ServiceCard from "../Cards/ServiceCard.svelte";
+    import BorderdCard from "../Cards/BorderdCard.svelte";
 
     export const data = {
         content: ['Understanding', 'Ideating', 'Conceptualizing', 'Implementing', 'Finalizing'
@@ -12,30 +13,40 @@
 </script>
 <style type="postcss">
 
-    hr {
-        border: none;
-        border-top: 2px dotted #9c8e5e;
-        @apply w-full h-2 my-8
+    div > div {
+        height:35vh;
+        @apply mb-24;
     }
 
 </style>
 
 <div class="flex flex-col default-spacing">
-    <ServiceCard position="left" image="/uploads/service-content-design.svg" data="{data.content}">
-        <slot>
-            <h4 class="text-primary-dark pb-2">Web Content & Design</h4>
-        </slot>
-    </ServiceCard>
-    <hr/>
-    <ServiceCard position="right" image="/uploads/service-web-development.svg" data="{data.development}">
-        <slot>
-            <h4 class="text-primary-dark pb-2">Web Development</h4>
-        </slot>
-    </ServiceCard>
-    <hr/>
-    <ServiceCard position="left" image="/uploads/service-analytics.svg" data="{data.analytics}">
-        <slot>
-            <h4 class="text-primary-dark pb-2">Web Optimization & Analytics</h4>
-        </slot>
-    </ServiceCard>
+    <div>
+        <BorderdCard width="lg:w-full">
+            <ServiceCard position="left" image="/uploads/service-content-design.svg" data="{data.content}">
+                <slot>
+                    <h4 class="text-primary-dark pt-0">Web Content & Design</h4>
+                </slot>
+            </ServiceCard>
+        </BorderdCard>
+    </div>
+    <div class="h-full">
+        <BorderdCard width="lg:w-full h-full">
+            <ServiceCard position="right" image="/uploads/service-web-development.svg" data="{data.development}">
+                <slot>
+                    <h4 class="text-primary-dark pt-0">Web Development</h4>
+                </slot>
+            </ServiceCard>
+        </BorderdCard>
+    </div>
+    <div >
+        <BorderdCard width="lg:w-full">
+            <ServiceCard position="left" image="/uploads/service-analytics.svg" data="{data.analytics}">
+                <slot>
+                    <h4 class="text-primary-dark pt-0">Web Optimization & Analytics</h4>
+                </slot>
+            </ServiceCard>
+        </BorderdCard>
+    </div>
 </div>
+

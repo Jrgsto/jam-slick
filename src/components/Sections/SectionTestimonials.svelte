@@ -50,24 +50,9 @@
         position: relative;
     }
 
-    .dots {
-        transform: translateX(-50%);
-        @apply absolute bottom-5 left-1/2;
-    }
-
-    .dot {
-        border-radius: 8px;
-        @apply bg-complementary-dark w-4 h-4 m-2 inline-block;
-    }
-
-    .dot.active {
-        position: absolute;
-        @apply bg-primary
-    }
-
 
 </style>
-<div class="flex flex-col default-spacing">
+<div class="flex flex-col default-width">
     <div class="flex w-full h-80 w-80 lg:hidden">
         <Swipeable numScreens="2" let:current bind:progress={introProgress}>
             {#each testimonials as item,index}

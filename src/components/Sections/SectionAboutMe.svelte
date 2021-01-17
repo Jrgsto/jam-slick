@@ -19,6 +19,7 @@
         $modal.title = data.filter((item => item.id === id))[0].title;
         contentToShow = data.filter((item => item.id === id))[0].text;
         $modal.text = contentToShow;
+        console.log("Active element", id);
         activeHoverElement = id;
         $showOverlay = true;
 
@@ -48,36 +49,43 @@
 
     ]
 </script>
+<style>
+    @media (min-width: 480px) {
+        .custom-width {
+            width: 250px;
+            max-width: 250px;
+        }
+    }
 
-<div class="flex flex-col default-spacing mb-32 lg:mb-44">
+</style>
+<div class="flex flex-col default-width mb-32 lg:mb-44">
     <div class="flex flex-wrap justify-center lg:justify-start">
         <div class="w-64 h-64 flex mb-8">
             <div class="group w-full h-full rounded-full overflow-hidden shadow-lg text-center bg-purple table c">
-                <span class="hidden group-hover:table-cell text-white font-bold align-middle">KR</span>
                 <img src="/uploads/ich.png" alt="Joerg Stommel"
                      class="object-cover object-center w-full h-full visible group-hover:hidden"/>
             </div>
         </div>
         <div class="ml-4">
-            <h2>And well, thats me...</h2>
+            <h2><span class="highlight text-black lg:text-white">And well, thats me...</span></h2>
             <div class="mb-12 ml-4">
                 My name is Joerg and
             </div>
         </div>
     </div>
-    <div class="flex flex-col lg:flex-row flex-wrap justify-center w-full">
+    <div class="flex flex-col lg:flex-row justify-center lg:justify-between flex-wrap w-full">
         {#each data as item}
             <div id={item.id} on:click={() => handleClick(item.id)}
-                 class=" lg:mx-8 my-8 cursor-pointer flex-1 h-24">
-                <BorderdCard containerClass="bg-spice text-white">
-                    <div class="m-auto animated-text">
+                 class=" m-auto lg:mx-8 my-8 cursor-pointer flex-1 h-20 custom-width">
+                <BorderdCard animated=true containerClass="{activeHoverElement === item.id ? 'bg-red' : 'bg-spice'} text-white p-4 relative">
+                    <div class="m-auto custom-width ">
                         {item.title}
                     </div>
                 </BorderdCard>
             </div>
         {/each}
         {#if contentToShow}
-            <div in:fade class="hidden mx-8 lg:block w-full bg-spice text-white p-12 w-2/3">
+            <div transition:fade class="hidden mx-8 lg:block w-full bg-spice text-white p-12 w-2/3">
                 {contentToShow}
             </div>
         {/if}

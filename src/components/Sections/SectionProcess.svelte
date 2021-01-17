@@ -38,7 +38,7 @@
 
 </script>
 
-<div class="flex flex-col default-spacing mb-32 lg:mb-44">
+<div class="flex flex-col default-width mb-32 lg:mb-44">
     <div class="flex flex-col justify-between">
         {#each data as step}
             <ProcessCard free={step.free} special={step.special} contact={step.contact ? true : false}>

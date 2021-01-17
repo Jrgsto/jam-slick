@@ -81,14 +81,14 @@
         </div>
             <ul class="hidden list-reset lg:flex justify-end flex-1 text-xl pt-2 {showFixedNav ? 'text-white' : 'text-black-light'}">
             <li class="mr-3">
-                <div class="dropdown inline-block relative">
-                    <a href="about" class="animated-link py-2 px-4 rounded inline-flex items-center">
+                <div class="dropdown inline-block">
+                    <a href="about" class="relative animated-link py-2 px-4 rounded inline-flex items-center">
                         About me
                     </a>
                 </div>
             </li>
             <li class="mr-3">
-                <a class="animated-link inline-block py-2 px-4 mr-4" href="contact">Projects</a>
+                <a class="relative animated-link inline-block py-2 px-4 mr-4" href="contact">Projects</a>
             </li>
             <li class="mt-2">
                 <Button showArrow={true} color='bg-spice text-white' size="small">

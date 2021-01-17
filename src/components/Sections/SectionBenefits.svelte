@@ -3,12 +3,12 @@
 
 
 </script>
-<div class="relative flex justify-center mb-32 lg:mb-44 default-spacing">
+<div class="relative flex justify-center mb-32 lg:mb-44 default-width">
     <BorderedCard width="lg:w-1/2">
         <div class="flex-col flex p-20">
             <div class="flex mb-12">
                 <div class="w-full lg:w-2/3">
-                    <h2 >I can help you to build a website...</h2>
+                    <h2 class="pt-0">I can help you to build a website...</h2>
                 </div>
                 <div class="hidden lg:flex flex-1"></div>
             </div>

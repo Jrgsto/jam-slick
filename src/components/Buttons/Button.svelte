@@ -9,9 +9,9 @@
     }
 </script>
 <div>
-<button on:click|preventDefault={handleClick} type="button" class="animated-button relative w-auto">
+<button on:click|preventDefault={handleClick} type="button" class="relative w-auto">
       <div class="absolute -top-2 -left-2 border-2 border-spice w-full {buttonSize}"></div>
-      <div class="inline-block font-bold pl-4 m-auto {buttonClass} {buttonSize} bg-spice flex items-center z-40">
+      <div class="inline-block font-bold pl-4 m-auto {buttonClass} {buttonSize} relative bg-spice flex items-center z-40 card-animated process-animated">
          <div class="mr-2 text-white">
             <slot></slot>
          </div>

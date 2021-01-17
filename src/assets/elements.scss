@@ -1,140 +1,199 @@
 /* elements.scss */
 
 .speech-bubble {
-    position: relative;
-    margin: .5em auto;
-    padding: 1em;
-    width: 10em; height: 4em;
-    border-radius: .25em;
-    transform: rotate(-4deg) rotateY(15deg);
-    background: #629bdd;
-    font: 2em/4 Century Gothic, Verdana, sans-serif;
-    text-align: center;
+  position: relative;
+  margin: .5em auto;
+  padding: 1em;
+  width: 10em;
+  height: 4em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  font: 2em/4 Century Gothic, Verdana, sans-serif;
+  text-align: center;
 }
+
 .speech-bubble:before, .speech-bubble:after {
-    position: absolute;
-    z-index: -1;
-    content: '';
+  position: absolute;
+  z-index: -1;
+  content: '';
 }
+
 .speech-bubble:after {
-    top: 0; right: 0; bottom: 0; left: 0;
-    border-radius: inherit;
-    transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
-    background: #f4fbfe;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe;
 }
+
 .speech-bubble:before {
-    border: solid 0 transparent;
-    border-right: solid 3.5em #f4fbfe;
-    border-bottom: solid .25em #629bdd;
-    bottom: .25em; left: 1.25em;
-    width: 0; height: 1em;
-    transform: rotate(45deg) skewX(75deg);
+  border: solid 0 transparent;
+  border-right: solid 3.5em #f4fbfe;
+  border-bottom: solid .25em #629bdd;
+  bottom: .25em;
+  left: 1.25em;
+  width: 0;
+  height: 1em;
+  transform: rotate(45deg) skewX(75deg);
 }
 
 .close {
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
 }
+
 .close:hover {
-    opacity: 1;
+  opacity: 1;
 }
+
 .close:before, .close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: #333;
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
 }
+
 .close:before {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
+
 .close:after {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .bg-left-1:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height:40vw;
-    z-index: 1;
-    opacity: 0.4;
-    background-image: url('/uploads/background-drama-left-1.png');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: left;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url('/uploads/background-drama-left-1.png');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: left;
 }
 
 .bg-left-2:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height:40vw;
-    z-index: 1;
-    opacity: 0.4;
-    background-image: url('/uploads/background-drama-left-2.png');
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: left;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url('/uploads/background-drama-left-2.png');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: left;
 }
 
 .bg-right-1:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height:40vw;
-    z-index: 1;
-    opacity: 0.4;
-    background-image: url('/uploads/background-drama-right.png');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: right top;
-    margin-top:-200px;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url('/uploads/background-drama-right.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right top;
+  margin-top: -200px;
 }
 
 .bg-right-2:before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height:40vw;
-    z-index: 1;
-    opacity: 0.4;
-    background-image: url('/uploads/background-drama-right-2.png');
-    background-repeat: no-repeat;
-    background-size: 50%;
-    background-position: right top;
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40vw;
+  z-index: 1;
+  opacity: 0.4;
+  background-image: url('/uploads/background-drama-right-2.png');
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: right top;
 }
 
 .animated-button:hover svg {
-    animation: neon4 1s ease-in-out infinite alternate;
-    @apply shadow-2xl
+  animation: neon4 1s ease-in-out infinite alternate;
+  @apply shadow-2xl
 }
 
 .animated-text:hover {
-    animation: neon4 1s ease-in-out infinite alternate;
-    @apply shadow-2xl;
+  animation: neon4 1s ease-in-out infinite alternate;
+  @apply shadow-2xl;
 }
 
-.animated-link:hover {
-    animation: neon4 1s ease-in-out infinite alternate;
-    @apply shadow-2xl;
+.animated-link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.animated-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.card-animated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  z-index: -1;
+  transition: transform 200ms ease-in;
+}
+
+.process-animated::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.process-animated:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 
 @keyframes neon4 {
-    from {
-        filter: drop-shadow(0 0 10px #fff)drop-shadow( 0 0 10px #fff)
-    }
-    to {
-        filter: drop-shadow(0 0 0px #fff)drop-shadow( 0 0 5px #fff)
-    }
+  from {
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 10px #fff)
+  }
+  to {
+    filter: drop-shadow(0 0 0px #fff) drop-shadow(0 0 5px #fff)
+  }
+}
+
+@media (min-width: 768px) {
+  .highlight {
+    font-weight: bolder;
+    background: linear-gradient(104deg, rgba(237, 106, 90, 0) 0.9%, rgba(237, 106, 90, 1.25) 2.4%, rgba(237, 106, 90, 0.5) 5.8%, rgba(237, 106, 90, 0.2) 87%, rgba(237, 106, 90, 0.7) 93%, rgba(237, 106, 90, 0) 99%), linear-gradient(183deg, rgba(237, 106, 90, 0) 0%, rgba(237, 106, 90, 0.3) 7.9%, rgba(237, 106, 90, 0) 15%);
+    padding: 1.5rem;
+    -webkit-box-decoration-break: clone;
+    margin: 0;
+    border-radius: 7.5px;
+  }
 }

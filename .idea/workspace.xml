@@ -23,19 +23,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/uploads/elipse-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/elipse-green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/elipse-yellow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/elements.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/elements.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards/BorderdCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards/BorderdCard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderBox.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HeaderBox.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +132,11 @@
       <workItem from="1610091950097" duration="10227000" />
       <workItem from="1610109687268" duration="7000" />
       <workItem from="1610116392869" duration="17556000" />
-      <workItem from="1610897236906" duration="10633000" />
+      <workItem from="1610897236906" duration="10666000" />
+      <workItem from="1610955957981" duration="9000" />
+      <workItem from="1610972141939" duration="519000" />
+      <workItem from="1610974388512" duration="6844000" />
+      <workItem from="1610981723417" duration="8611000" />
     </task>
     <servers />
   </component>

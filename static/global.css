@@ -900,7 +900,6 @@ body {
 #content {
   height: 100%;
   padding-top:5rem;
-  background-image: url('/uploads/background-raster.png');
   background-repeat: repeat;
 }
 

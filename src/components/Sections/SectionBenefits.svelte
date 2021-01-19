@@ -1,10 +1,12 @@
 <script>
     import BorderedCard from 'components/Cards/BorderdCard.svelte';
+    import ProcessCard from "../Cards/ProcessCard.svelte";
 
 
 </script>
-<div class="relative flex justify-center mb-32 lg:mb-44 default-width">
-    <BorderedCard width="lg:w-1/2">
+<div class="default-width flex items-center justify-between">
+<div class="relative flex mb-32 lg:mb-44 w-1/2">
+    <BorderedCard containerClass="bg-white">
         <div class="flex-col flex p-20">
             <div class="flex mb-12">
                 <div class="w-full lg:w-2/3">
@@ -66,4 +68,10 @@
         <img class="hidden md:block bottom-0 left-12 absolute" src="/uploads/triangle.svg"/>
         <img class="hidden md:block top-10 -right-16 absolute z-20" src="/uploads/circlesborder.svg"/>
     </BorderedCard>
+
+</div>
+    <ProcessCard contact="true">
+        <div>Lets get to know each other!</div>
+    </ProcessCard>
+
 </div>

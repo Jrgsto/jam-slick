@@ -1,5 +1,8 @@
 <script>
     import {onMount} from 'svelte';
+    import Button from "../Buttons/Button.svelte";
+    import BorderdCard from "../Cards/BorderdCard.svelte";
+    import HeaderBox from "components/HeaderBox.svelte";
 
     const padding = 30;
     export let fromEl;
@@ -38,16 +41,20 @@
     let classActiveEl = "";
 
     const toggleStatus = (id) => {
+        let element = document.getElementById(activeElement);
+        if(element.classList.contains('text-white')) {
+            element.classList.remove('text-white');
+        }
         activeElement = id;
-        let element = document.getElementById(id);
+        element = document.getElementById(activeElement);
         toEl.x = element.offsetLeft;
         toEl.y = element.offsetTop;
         classActiveEl.style.transform = "translate3d(" + toEl.x + "px," + toEl.y + "px,0)";
+        setTimeout(() => {
+            element.classList.add('text-white');
+        }, 400)
     }
 
-    const animate = (id) => {
-
-    }
 
     const setInitialPosition = () => {
         classActiveEl.style.top = -(padding / 2) + 'px';
@@ -71,52 +78,47 @@
         @apply p-4 bg-complementary-dark shadow-lg;
     }
 
-    .transform-color {
-        transition: color .6s ease-in-out;
+    .custom-height {
+        height: 400px;
     }
 
-
-    .animate-in {
-        animation: slide-in .6s forwards;
-    }
-
-
-    @keyframes slide-in {
-        0% { transform: translateX(200%); }
-        100% { transform: translateX(0%); }
-    }
-
-    @keyframes slide-out {
-        0% { transform: translateX(0%); }
-        100% { transform: translateX(200%); }
-    }
 </style>
-<!--<img class="absolute right-0 -top-80 bg-image z-0" src="{activeElement.color}"/>-->
-<div class="flex default-width justify-between">
-    <div class="flex flex-col relative">
-        <div style="--width:{offsetWidth + padding + 'px'}; --height:{offsetHeight + padding + 'px'}"
-             class="hidden active absolute z-10"></div>
-        {#each data as item,index }
-            <div bind:offsetWidth={offsetWidth} bind:offsetHeight={offsetHeight} id="{item.id}"
-                 on:click="{() => toggleStatus(item.id)}"
-                 class="{activeElement === item.id ? 'text-white' : 'text-black'} transform-color mb-12 cursor-pointer z-20">
-                {item.title}
-            </div>
-        {/each}
-    </div>
-    <div id="animated" class="flex w-3/5 relative ">
-        {#each data as dataItem,index}
-            {#if activeElement === dataItem.id}
-                <div id="{'animate-' + dataItem.id}"class="w-full flex flex-col z-20 animate-in">
-                    {#each dataItem.items as item}
-                        <div class="pb-4">{item}</div>
+<div class="default-width flex flex-col mb-32 lg:mb-44">
+        <div class="flex flex-col">
+            <HeaderBox>
+                <h2 class="text-left p-0">And can help you with other stuff, too...</h2>
+            </HeaderBox>
+            <div class="justify-center items-center flex">
+                <div class="flex flex-col justify-between relative mr-24">
+                    <div style="--width:{offsetWidth + padding + 'px'}; --height:{offsetHeight + padding + 'px'}"
+                         class="hidden active absolute z-10"></div>
+                    {#each data as item,index }
+                        <div bind:offsetWidth={offsetWidth} bind:offsetHeight={offsetHeight} id="{item.id}"
+                             on:click="{() => toggleStatus(item.id)}"
+                             class="mb-12 cursor-pointer z-20">
+                            <span class="{activeElement !== item.id ? 'animated-link relative pb-2' : '' }">{item.title}</span>
+                        </div>
                     {/each}
                 </div>
-                <div class="absolute right-0 -top-20 z-10 animate-in">
-                    <img class="right-0 opacity-70" src="{dataItem.img}"/>
+                <div class="flex w-3/5 relative custom-height">
+                    {#each data as dataItem,index}
+                        {#if activeElement === dataItem.id}
+                            <div class="flex p-12">
+                                <img class="mr-12" src="{dataItem.img}"/>
+                                <div
+                                        class="font-bold flex flex-col justify-between z-20">
+                                    {#each dataItem.items as item}
+                                        <div class="">{item}</div>
+                                    {/each}
+                                </div>
+                            </div>
+
+                        {/if}
+
+                    {/each}
                 </div>
-            {/if}
-        {/each}
-    </div>
+            </div>
+        </div>
 </div>
+
 

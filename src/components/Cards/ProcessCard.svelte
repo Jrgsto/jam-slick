@@ -13,15 +13,15 @@
 
 </style>
 
-<div class="flex flex-col lg:flex-row items-center lg:items-start justify-center z-30">
-    <div class="w-20 flex justify-center ">
+<div class="flex flex-col lg:flex-row items-center lg:items-start justify-center z-30 w-1/2">
+    <div class="w-20 flex justify-center">
         {#if free}
             <div class="bg-spice shadow-lg text-white m-auto p-2">
             FREE!
             </div>
         {/if}
     </div>
-    <div class="w-56 my-4">
+    <div class="my-4 w-1/2">
         <div class="{style} w-full z-30 shadow-xl p-8 font-bold">
             <slot></slot>
         </div>

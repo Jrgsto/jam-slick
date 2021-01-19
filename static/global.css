@@ -779,7 +779,8 @@ video {
 
 .default-width {
   max-width:1600px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -797,6 +798,19 @@ video {
 @media (min-width: 768px) {
   .default-spacing-left {
     padding-left: 3rem;
+    width: 75%;
+  }
+}
+
+.default-spacing-right {
+  max-width:1600px;
+  margin-right: auto;
+  padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .default-spacing-right {
+    padding-right: 3rem;
     width: 75%;
   }
 }

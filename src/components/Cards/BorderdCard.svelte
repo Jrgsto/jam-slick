@@ -1,6 +1,6 @@
 <script>
     let offsetHeight;
-    let width='w-full';
+    export let width='w-full';
     export let containerClass ='bg-tertiary';
     export let animated =false;
 

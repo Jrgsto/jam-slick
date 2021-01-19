@@ -9,12 +9,17 @@
 
     .default-width {
         max-width:1600px;
-        @apply m-auto md:w-3/4;
+        @apply md:w-3/4 mx-auto;
     }
 
     .default-spacing-left {
         max-width:1600px;
         @apply p-2 md:pl-12 ml-auto md:w-3/4;
+    }
+
+    .default-spacing-right {
+        max-width:1600px;
+        @apply p-2 md:pr-12 mr-auto md:w-3/4;
     }
 
     h1 {

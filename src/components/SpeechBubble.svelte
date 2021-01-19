@@ -26,9 +26,6 @@
 
 <style>
         .box1 {
-                width: 300px;
-                height: 200px;
-                margin: 50px auto;
                 padding: 20px;
                 text-align: center;
                 font-weight: 900;
@@ -36,29 +33,60 @@
                 position: relative;
         }
 
+
         .sb1:after {
-                content: "";
-                width: 0px;
-                height: 0px;
-                position: absolute;
-                border-left: 10px solid var(--color);
-                border-right: 10px solid transparent;
-                border-top: 10px solid var(--color);
-                border-bottom: 10px solid transparent;
-                bottom: -20px;
-                left: 20px;
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid var(--color);
+            border-right: 10px solid transparent;
+            border-top: 10px solid var(--color);
+            border-bottom: 10px solid transparent;
+            transform:rotate(220deg);
+            top: 20px;
+            right: -10px;
         }
 
         .sb2:after {
-                content: "";
-                width: 0px;
-                height: 0px;
-                position: absolute;
-                border-left: 12px solid transparent;
-                border-right: 12px solid var(--color);
-                border-top: 12px solid transparent;
-                border-bottom: 12px solid var(--color);
-                top: -20px;
-                right: 20px;
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 15px solid var(--color);
+            border-right: 15px solid transparent;
+            border-top: 15px solid var(--color);
+            border-bottom: 15px solid transparent;
+            transform:rotate(220deg);
+            bottom: 20px;
+            right: -10px;
         }
+
+        .sb3:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid var(--color);
+            border-right: 10px solid transparent;
+            border-top: 10px solid var(--color);
+            border-bottom: 10px solid transparent;
+            transform:rotate(30deg);
+            top: 20px;
+            right: -10px;
+        }
+
+        .sb4:after {
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid var(--color);
+            border-right: 10px solid transparent;
+            border-top: 10px solid var(--color);
+            border-bottom: 10px solid transparent;
+            bottom: 20px;
+            right: -20px;
+        }
+
 </style>

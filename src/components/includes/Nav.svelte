@@ -36,20 +36,14 @@
         @apply h-24 w-screen;
     }
 
-    .background {
-        background-image: url('/uploads/background-raster.png');
-    }
 
-    .background-blue {
-        background-image: url('/uploads/background-raster-blue.png');
-    }
 
     .dropdown:hover .dropdown-menu {
         display: flex;
     }
 </style>
 
-<nav id="header" class="header-fix p-auto {headerClass} {!showFixedNav ? 'background' : 'background-blue'}">
+<nav id="header" class="header-fix p-auto {headerClass} {!showFixedNav ? 'bg-primary' : 'bg-complementary-dark'}">
     <div class="flex flex-wrap justify-between items-center default-spacing w-4/5 h-24">
         <div class="pl-4 flex flex-col">
             <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex relative">

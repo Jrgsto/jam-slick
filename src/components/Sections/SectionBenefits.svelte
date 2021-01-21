@@ -70,8 +70,6 @@
     </BorderedCard>
 
 </div>
-    <ProcessCard contact="true">
         <div>Lets get to know each other!</div>
-    </ProcessCard>
 
 </div>

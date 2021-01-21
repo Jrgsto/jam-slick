@@ -108,7 +108,7 @@
                                 <div
                                         class="font-bold flex flex-col justify-between z-20">
                                     {#each dataItem.items as item}
-                                        <div class="">{item}</div>
+                                        <div>{item}</div>
                                     {/each}
                                 </div>
                             </div>

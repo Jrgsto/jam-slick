@@ -25,10 +25,6 @@
         @apply font-normal text-white;
     }
 
-    .merge-container {
-        animation:scale 2s ease-in-out;
-    }
-
     @keyframes scale {
         0% {
             transform:  scale(0.0);
@@ -57,30 +53,43 @@
         margin-bottom: 30px;
     }
 
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+        }
+
+        70% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(0.95);
+        }
+    }
+
 
 </style>
-<div bind:offsetHeight={offsetHeight} bind:offsetWidth={offsetWidth} class="w-1/3 top-1/4 right-16 lg:absolute flex justify-end flex-col items-end relative">
-    <div class="merge-container z-40 hidden absolute bg-red">MERGED</div>
-        <div class="slide-animated mr-24">
-            <SpeechBubble colorSchema="bg-spice" box="sb3 hidden h-full">
+<div bind:offsetHeight={offsetHeight} bind:offsetWidth={offsetWidth} class="default-spacing-left flex justify-end items-end relative w-full">
+        <div class="slide-animated mr-24 w-1/4 h-40">
+            <SpeechBubble colorSchema="bg-spice" box=" sb3 hidden h-full">
                 <p>Where do I start?
                 </p>
             </SpeechBubble>
         </div>
-    <div class="slide-animated">
+    <div class="slide-animated mr-24 w-1/4 h-40">
         <SpeechBubble colorSchema="bg-complementary" box="w-full sb1 hidden h-full">
             <p>Whats the goal
                 of my website?</p>
         </SpeechBubble>
     </div>
-        <div class="slide-animated mr-24">
+        <div class="slide-animated mr-24 w-1/4 h-40">
             <SpeechBubble colorSchema="bg-complementary-dark" box="sb2 hidden h-full">
                 <p>What technology
                     should I use?</p>
             </SpeechBubble>
         </div>
-        <div class="slide-animated">
-            <SpeechBubble colorSchema="bg-primary-light" box="sb3 hidden h-full">
+        <div class="slide-animated mr-4 w-1/4 h-40">
+            <SpeechBubble colorSchema="bg-primary-light" box="sb4 hidden h-full">
                 <p>What is the right
                     structure, content
                     and design?</p>

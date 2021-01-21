@@ -3,32 +3,59 @@
 </script>
 <script>
     export let free = false;
-    export let special = false;
-    export let contact = false;
+    export let color;
+    export let active = false;
+    export let lastActive = false;
 
-    let style = special ? 'bg-complementary-dark text-white' : 'bg-white';
+
+    let colorBorder = `border-${color} `;
+    let colorBg = `bg-${color} `;
+    let colorText = `text-${color} `;
+
 
 </script>
-<style>
 
+<style type="postcss">
+
+    .slide-in-animated {
+        animation: slide-in 2s forwards;
+        transition: background-color 1s;
+    }
+
+    .slide-out-animated {
+        animation: slide-out 2s forwards;
+
+    }
+
+    @keyframes slide-in {
+        0% {
+        }
+        2% {
+            transform: translateX(0%) scale(1.2);
+        }
+        100% {
+            transform: translateX(-50%) scale(1.0);
+
+        }
+    }
+
+    @keyframes slide-out {
+        0% {
+            transform: translateX(-50%);
+        }
+
+        100% {
+        }
+    }
 </style>
 
-<div class="flex flex-col lg:flex-row items-center lg:items-start justify-center z-30 w-1/2">
-    <div class="w-20 flex justify-center">
+<div class="z-30 shadow-xl py-6 px-12 font-bold w-full relative text-center  {active ? `slide-in-animated text-white ${colorBg}` : `border bg-white ${colorBorder} ${colorText}`} {lastActive ? 'slide-out-animated' : ''}">
+    <div class="absolute -top-5 -left-10 flex justify-center">
         {#if free}
             <div class="bg-spice shadow-lg text-white m-auto p-2">
-            FREE!
+                FREE!
             </div>
         {/if}
     </div>
-    <div class="my-4 w-1/2">
-        <div class="{style} w-full z-30 shadow-xl p-8 font-bold">
-            <slot></slot>
-        </div>
-        {#if contact}
-            <div class="bg-complementary-dark bg-opacity-40 shadow-xl p-8">
-                <span> You can</span> <a href="contact" class="animated-link hover:font-bold underline cursor-pointer font-bold"> contact me here </a><span> directly. I’ll get back to you shortly!</span>
-            </div>
-        {/if}
-    </div>
+    <slot></slot>
 </div>

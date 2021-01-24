@@ -27,7 +27,7 @@
     }
 
     h2 {
-        @apply py-10 text-2xl lg:text-4xl font-semibold font-lato tracking-wider;
+        @apply py-10 text-2xl lg:text-4xl font-semibold font-lato tracking-wider ;
     }
 
     h3 {
@@ -39,7 +39,7 @@
     }
 
     p {
-        @apply py-8 text-xl font-lato tracking-wider;
+        @apply py-8 font-normal font-lato tracking-wider;
     }
 
     a {
@@ -77,6 +77,9 @@
         border: none;
         border-top: 2px dotted #ED6A5A;
         @apply h-2;
+    }
+    .header-space {
+        @apply mb-8 mt-24 lg:mb-12 lg:mt-44;
     }
 
 }

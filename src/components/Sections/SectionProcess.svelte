@@ -13,7 +13,7 @@
         {
             id: 'process-2',
             name: 'Commitment',
-            color: 'spice'
+            color: 'primary-dark'
         },
         {
             id: 'process-3',
@@ -52,10 +52,11 @@
         padding: var(--padding);
     }
 </style>
-
-<div class="flex default-width mb-32 lg:mb-44">
+<div class="default-width">
+    <h2>Interested? These are the next steps...</h2>
+<div class="flex mb-32 lg:mb-44">
     <div bind:offsetHeight={offsetHeight} style="--height:{height + 'px'};--padding:{padding + 'px'}"
-         class="w-1/2 detail-container">
+         class="w-2/3 detail-container">
         <BorderdCard containerClass="bg-white h-full w-full p-12">
             {#if activeElement[0] === data[0].id}
                 <div in:fade class="h-full"> Here is then the content for UNderstanding</div>
@@ -77,4 +78,5 @@
             </div>
         {/each}
     </div>
+</div>
 </div>

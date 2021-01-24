@@ -53,6 +53,7 @@
 
 </style>
 <div class="flex flex-col default-width">
+    <h2>What people say about my work...</h2>
     <div class="flex w-full h-80 w-80 lg:hidden">
         <Swipeable numScreens="2" let:current bind:progress={introProgress}>
             {#each testimonials as item,index}
@@ -61,7 +62,7 @@
                          style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"
                     >
                         <div class="lg:flex w-full justify-center">
-                            <BorderdCard>
+                            <BorderdCard containerClass="bg-white">
                                 <div class="p-12 flex-col">
                                     <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
                                     <div class="mb-4">{item.text}</div>
@@ -80,7 +81,7 @@
     <div class="hidden lg:flex w-full justify-center">
         {#each testimonials as item}
             <div class="lg:mr-12">
-            <BorderdCard>
+            <BorderdCard containerClass="bg-white">
                 <div class="p-12 flex-col">
                     <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
                     <div class="mb-4">{item.text}</div>

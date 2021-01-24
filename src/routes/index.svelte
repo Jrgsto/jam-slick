@@ -41,16 +41,10 @@
         <div class="bg-left-2 relative">
         </div>
             <div class="bg-right-2"></div>
-        <HeaderBox>
-            <h2>Interested? These are the next steps...</h2>
-        </HeaderBox>
         <SectionProcess></SectionProcess>
         </div>
 
         <SectionAboutMe></SectionAboutMe>
-        <HeaderBox>
-            <h2>What people say about my work...</h2>
-        </HeaderBox>
         <div class="bg-left-1"></div>
         <SectionTestimonials></SectionTestimonials>
     </div>

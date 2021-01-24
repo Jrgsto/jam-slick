@@ -5,7 +5,7 @@
 
 </script>
 <div class="default-width flex items-center justify-between mb-32 lg:mb-44">
-    <div class="relative flex  w-1/2">
+    <div class="relative flex w-1/2">
         <BorderedCard containerClass="bg-white">
             <div class="flex-col flex p-20">
                 <div class="flex mb-12">
@@ -69,7 +69,7 @@
             <img class="hidden md:block top-10 -right-16 absolute z-20" src="/uploads/circlesborder.svg"/>
         </BorderedCard>
     </div>
-    <div class="flex flex-col w-1/4 items-center">
+    <div class="flex flex-col w-96 items-center">
         <div class=" p-8 text-center text-2xl">Let's talk!</div>
         <hr class="w-1/2 m-auto"/>
         <div class="p-8 bg-opacity-20 text-center">
@@ -83,7 +83,5 @@
                 </slot>
             </Button>
         </div>
-
     </div>
-
 </div>

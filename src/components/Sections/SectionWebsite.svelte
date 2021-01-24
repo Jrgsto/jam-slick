@@ -70,25 +70,25 @@
 
 </style>
 <div bind:offsetHeight={offsetHeight} bind:offsetWidth={offsetWidth} class="default-spacing-left flex justify-end items-end relative w-full">
-        <div class="slide-animated pr-24 w-1/4 h-40">
+        <div class="slide-animated pr-8 w-1/4 h-40">
             <SpeechBubble colorSchema="bg-spice" box=" sb3 hidden h-full">
                 <p>Where do I start?
                 </p>
             </SpeechBubble>
         </div>
-    <div class="slide-animated pr-24 w-1/4 h-40">
+    <div class="slide-animated pr-8 w-1/4 h-40">
         <SpeechBubble colorSchema="bg-complementary" box="w-full sb1 hidden h-full">
             <p>Whats the goal
                 of my website?</p>
         </SpeechBubble>
     </div>
-        <div class="slide-animated pr-24 w-1/4 h-40">
+        <div class="slide-animated pr-8 w-1/4 h-40">
             <SpeechBubble colorSchema="bg-complementary-dark" box="sb2 hidden h-full">
                 <p>What technology
                     should I use?</p>
             </SpeechBubble>
         </div>
-        <div class="slide-animated mr-12 w-1/4 h-40">
+        <div class="slide-animated w-1/4 h-40">
             <SpeechBubble colorSchema="bg-primary-light" box="sb4 hidden h-full">
                 <p>What is the right
                     structure, content

@@ -908,7 +908,7 @@ html {
 body {
   height:100%;
   width:100%;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 #content {
@@ -926,7 +926,7 @@ body {
 
 hr {
   border: none;
-  border-top: 2px dotted #9C8E5E;
+  border-top: 2px dotted #ED6A5A;
   height: 0.5rem;
 }
 

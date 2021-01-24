@@ -19,7 +19,6 @@
 
     .slide-in-animated {
         animation: slide-in 2s forwards;
-        transition: background-color 1s;
     }
 
     .slide-out-animated {

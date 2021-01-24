@@ -1,29 +1,7 @@
 <script>
     import ModalCardDetails from "../Cards/ModalCardDetails.svelte";
     import {modal, showOverlay} from "../../stores";
-    import BorderdCard from "../Cards/BorderdCard.svelte";
     import {fade} from 'svelte/transition';
-    let activeHoverElement = "";
-    let contentToShow = null;
-
-    const handleClick = (id) => {
-        if (activeHoverElement === id) {
-            $modal.component = null
-            $modal.title = ''
-            $modal.text = ''
-            $showOverlay = false;
-            contentToShow = null;
-            return activeHoverElement = "";
-        }
-        $modal.component = ModalCardDetails
-        $modal.title = data.filter((item => item.id === id))[0].title;
-        contentToShow = data.filter((item => item.id === id))[0].text;
-        $modal.text = contentToShow;
-        console.log("Active element", id);
-        activeHoverElement = id;
-        $showOverlay = true;
-
-    }
 
     const data = [
         {
@@ -46,49 +24,73 @@
             id: 'lego',
             text: 'Coding is like crafting a lego world...just a bit different. And I love crafting. So be assured that I am pushing the project forward. A plan is good, but it\'s even better to see a plan working.'
         },
-
     ]
+
+
+    let activeHoverElement = "background";
+    let contentToShow = data[0].text;
+
+    const handleClick = (id) => {
+        if (activeHoverElement === id) {
+            $modal.component = null
+            $modal.title = ''
+            $modal.text = ''
+            $showOverlay = false;
+            contentToShow = null;
+            return activeHoverElement = "";
+        }
+        $modal.component = ModalCardDetails
+        $modal.title = data.filter((item => item.id === id))[0].title;
+        contentToShow = data.filter((item => item.id === id))[0].text;
+        $modal.text = contentToShow;
+        console.log("Active element", id);
+        activeHoverElement = id;
+        $showOverlay = true;
+
+    }
+
+
 </script>
 <style>
-    @media (min-width: 480px) {
-        .custom-width {
-            width: 250px;
-            max-width: 250px;
-        }
+
+    .active-tab:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: currentColor;
     }
 
 </style>
-<div class="flex flex-col default-width mb-32 lg:mb-44">
-    <div class="flex flex-wrap justify-center lg:justify-start">
-        <div class="w-64 h-64 flex mb-8">
-            <div class="group w-full h-full rounded-full overflow-hidden shadow-lg text-center bg-purple table c">
-                <img src="/uploads/ich.png" alt="Joerg Stommel"
-                     class="object-cover object-center w-full h-full visible group-hover:hidden"/>
-            </div>
+<div class="flex flex-col default-width mb-32 lg:mb-44 w-1/2 items-center">
+    <div class="flex mb-12">
+        <div class="group w-1/4 h-full rounded-full overflow-hidden shadow-lg text-center bg-purple table mr-8">
+            <img src="/uploads/ich.png" alt="Joerg Stommel"
+                 class="object-cover object-center w-full h-full visible group-hover:hidden"/>
         </div>
-        <div class="ml-4">
-            <h2><span class="highlight text-black lg:text-white">And well, thats me...</span></h2>
+        <div class="flex flex-col">
+            <h2>And well, thats me...</h2>
             <div class="mb-12 ml-4">
                 My name is Joerg and
             </div>
         </div>
     </div>
-    <div class="flex flex-col lg:flex-row justify-center lg:justify-between flex-wrap w-full">
+    <div class="flex lg:flex-row items-center justify-center lg:justify-around w-full">
         {#each data as item}
             <div id={item.id} on:click={() => handleClick(item.id)}
-                 class=" m-auto lg:mx-8 my-8 cursor-pointer flex-1 h-20 custom-width">
-                <BorderdCard animated=true containerClass="{activeHoverElement === item.id ? 'bg-red' : 'bg-spice'} text-white p-4 relative">
-                    <div class="m-auto custom-width ">
-                        {item.title}
-                    </div>
-                </BorderdCard>
+                 class="cursor-pointer">
+                <div class="{activeHoverElement === item.id ? 'active-tab font-bold' : 'animated-link'} relative pb-2">
+                    {item.title}
+                </div>
             </div>
         {/each}
-        {#if contentToShow}
-            <div transition:fade class="hidden mx-8 lg:block w-full bg-spice text-white p-12 w-2/3">
-                {contentToShow}
-            </div>
-        {/if}
     </div>
+    {#if contentToShow}
+        <div transition:fade class="hidden mx-8 lg:block w-full p-12 w-2/3">
+            {contentToShow}
+        </div>
+    {/if}
 </div>
 

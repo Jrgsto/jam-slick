@@ -36,8 +36,8 @@
     <div>
         <SectionHeader/>
         <SectionBenefits></SectionBenefits>
-        <div class="bg-arrow">
         <SectionServices></SectionServices>
+        <div class="bg-arrow">
         <div class="bg-left-2 relative">
         </div>
             <div class="bg-right-2"></div>
@@ -60,17 +60,17 @@
     .bg-arrow {
         background-image: url("/uploads/arrow-process.svg");
         background-repeat: no-repeat;
-        background-position: 70% 60%;
+        background-position: top 70%;
         height:100%;
-        position: relative;
+
     }
 
-    .bg-arrow::before {
-        content:'See process';
-        position:absolute;
-        right:28%;
-        top:20%;
-        width:200px;
-        height:200px;
-    }
+    /*.bg-arrow::before {*/
+    /*    content:'';*/
+    /*    position:absolute;*/
+    /*    right:28%;*/
+    /*    top:20%;*/
+    /*    width:200px;*/
+    /*    height:200px;*/
+    /*}*/
 </style>

@@ -50,13 +50,14 @@
         min-height: 100%;
         position:relative;
         overflow:auto;
+
         @apply font-lato tracking-wider text-black-light w-screen;
 
     }
     body {
         height:100%;
         width:100%;
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     #content {
         height: 100%;
@@ -74,7 +75,7 @@
 
     hr {
         border: none;
-        border-top: 2px dotted #9C8E5E;
+        border-top: 2px dotted #ED6A5A;
         @apply h-2;
     }
 

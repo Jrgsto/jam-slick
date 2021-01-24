@@ -1,6 +1,6 @@
 <script>
     import ProcessCard from "../Cards/ProcessCard.svelte";
-    import Button from "../Buttons/Button.svelte";
+    import { fade } from 'svelte/transition';
     import BorderdCard from "../Cards/BorderdCard.svelte";
 
 
@@ -29,7 +29,7 @@
 
     const toggleStatus = (id) => {
 
-        if(activeElement[0] !== id) {
+        if (activeElement[0] !== id) {
             activeElement[1] = activeElement[0];
             activeElement[0] = id;
         } else {
@@ -40,7 +40,6 @@
     }
 
 
-
 </script>
 <style type="postcss">
 
@@ -48,37 +47,34 @@
         height: var(--height);
     }
 
-    .detail-container{
+    .detail-container {
         height: var(--height);
         padding: var(--padding);
     }
 </style>
 
 <div class="flex default-width mb-32 lg:mb-44">
-    <div bind:offsetHeight={offsetHeight} style="--height:{height + 'px'};--padding:{padding + 'px'}" class="w-1/2 detail-container">
+    <div bind:offsetHeight={offsetHeight} style="--height:{height + 'px'};--padding:{padding + 'px'}"
+         class="w-1/2 detail-container">
         <BorderdCard containerClass="bg-white h-full w-full p-12">
-            <div class="h-full"> Here is then the content</div>
+            {#if activeElement[0] === data[0].id}
+                <div in:fade class="h-full"> Here is then the content for UNderstanding</div>
+            {/if}
+            {#if activeElement[0] === data[1].id}
+                <div in:fade class="h-full"> Here is then the content for Commitment</div>
+            {/if}
+            {#if activeElement[0] === data[2].id}
+                <div in:fade class="h-full"> Here is then the content for Project</div>
+            {/if}
         </BorderdCard>
     </div>
     <div class="flex flex-col process-steps justify-around mt-3" style="--height:{offsetHeight -padding + 'px'}">
         {#each data as item}
             <div class="cursor-pointer" on:click="{() => toggleStatus(item.id)}">
-                <ProcessCard lastActive={activeElement[1] && activeElement[1] === item.id} active="{activeElement[0] === item.id}" color="{item.color}" free="{item.free}">{item.name}</ProcessCard>
+                <ProcessCard lastActive={activeElement[1] && activeElement[1] === item.id}
+                             active="{activeElement[0] === item.id}" color="{item.color}"
+                             free="{item.free}">{item.name}</ProcessCard>
             </div>
         {/each}
-
-        <!--        <div class="flex justify-center mt-12">-->
-        <!--            <div class="lg:w-20"></div>-->
-        <!--            &lt;!&ndash;{#each data as step}&ndash;&gt;-->
-        <!--            &lt;!&ndash;    <ProcessCard free={step.free} special={step.special} contact={step.contact ? true : false}>&ndash;&gt;-->
-        <!--            &lt;!&ndash;        <div>{step.name}</div>&ndash;&gt;-->
-        <!--            &lt;!&ndash;    </ProcessCard>&ndash;&gt;-->
-        <!--            &lt;!&ndash;{/each}&ndash;&gt;-->
-        <!--            <Button showArrow={true} color="mt-24 bg-spice text-white z-30">-->
-        <!--                <slot>-->
-        <!--                    Get in touch-->
-        <!--                </slot>-->
-        <!--            </Button>-->
-        <!--        </div>-->
     </div>
 </div>

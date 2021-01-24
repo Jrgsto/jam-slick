@@ -13,7 +13,6 @@
     import { fade } from 'svelte/transition';
     import {showForm, showOverlay, modal} from "../stores";
     import SectionHeader from "components/Sections/SectionHeader.svelte";
-    import HeaderBox from "components/HeaderBox.svelte";
     import SectionBenefits from "components/Sections/SectionBenefits.svelte";
     import SectionServices from "components/Sections/SectionServices.svelte";
     import SectionProcess from "components/Sections/SectionProcess.svelte";
@@ -43,7 +42,6 @@
             <div class="bg-right-2"></div>
         <SectionProcess></SectionProcess>
         </div>
-
         <SectionAboutMe></SectionAboutMe>
         <div class="bg-left-1"></div>
         <SectionTestimonials></SectionTestimonials>

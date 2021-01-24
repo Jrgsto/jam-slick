@@ -1,7 +1,6 @@
 <script>
     import Button from "components/Buttons/Button.svelte";
     import SectionWebsite from "components/Sections/SectionWebsite.svelte";
-    import HeaderBox from "components/HeaderBox.svelte";
 </script>
 <style type="postcss">
 

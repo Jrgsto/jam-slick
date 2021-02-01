@@ -9,7 +9,7 @@
 
     .default-width {
         max-width:1600px;
-        @apply md:w-3/4 mx-auto;
+        @apply md:p-0 md:w-3/4 mx-auto;
     }
 
     .default-spacing-left {
@@ -63,14 +63,12 @@
         height: 100%;
         padding-top:5rem;
         background-repeat: repeat;
+        @apply text-lg
 
     }
     #footer{
         bottom:0;
-        height:250px;
-        background-image: url('/uploads/background-raster.png');
         background-repeat: repeat;
-
     }
 
     hr {

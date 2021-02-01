@@ -3,7 +3,6 @@
     import Footer from "../components/includes/Footer.svelte";
     import { onMount } from 'svelte';
 
-
     onMount(() => {
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
@@ -24,10 +23,10 @@
 <div id="navbar">
     <Nav/>
 </div>
-<div class="bg-tertiary pb-36" id="content">
+<div class="bg-white" id="content">
     <slot></slot>
 </div>
-<div id="footer" class="w-full h-full bg-tertiary p-12 ">
+<div id="footer" class="w-full h-full p-12 ">
     <Footer></Footer>
 </div>
 </body>

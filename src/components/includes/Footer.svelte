@@ -4,14 +4,14 @@
 <style>
 </style>
 
-<footer class="default-spacing flex flex-wrap h-full justify-around md:justify-between items-center">
-    <div class="w-48">
-        <div class="text-xs uppercase text-gray-500 font-medium">Home</div>
-        <a class="my-3 block" href="/#">Über mich <span class="text-teal-600 text-xs p-1"></span></a><a
-            class="my-3 block" href="/#">Impressum <span class="text-teal-600 text-xs p-1"></span></a><a
-            class="my-3 block" href="/#">Kontakt<span class="text-teal-600 text-xs p-1"></span></a>
+<footer class="default-width flex flex-wrap h-full justify-around lg:justify-between items-center">
+    <div class="w-48"><a
+            class="my-3 block float-right" href="/#">Impressum <span class="text-teal-600 text-xs"></span></a><a
+            class="my-3 block" href="/#">Contact<span class="text-teal-600 text-xs"></span></a>
     </div>
-    <div class="md:mb-auto">
-        <div class="mb-4">Folge mir auch auf</div>
+    <div class="lg:mb-auto">
+        <div class="justify-center pt-2 flex items-center">Because I <span
+                class="text-red text-3xl pr-1">&#10084;</span> what I do
+        </div>
     </div>
 </footer>

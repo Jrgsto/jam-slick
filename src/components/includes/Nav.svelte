@@ -1,6 +1,6 @@
 <script>
     import Button from 'components/Buttons/Button.svelte';
-    import { fade, fly } from 'svelte/transition';
+    import {fade, fly} from 'svelte/transition';
 
     let height = 100;
     let y;
@@ -14,7 +14,7 @@
 
         } else {
             showFixedNav = false;
-            return "bg-tertiary";
+            return "bg-white";
         }
 
     }
@@ -37,33 +37,33 @@
     }
 
 
-
     .dropdown:hover .dropdown-menu {
         display: flex;
     }
 </style>
 
-<nav id="header" class="header-fix p-auto {headerClass} {!showFixedNav ? 'bg-primary' : 'bg-complementary-dark'}">
-    <div class="flex flex-wrap justify-between items-center default-spacing w-4/5 h-24">
-        <div class="pl-4 flex flex-col">
-            <a href ="/" class="cursor-pointer text-2xl lg:text-3xl flex relative">
+<nav id="header" class="header-fix {headerClass} {!showFixedNav ? 'bg-tertiary' : 'bg-tertiary'}">
+    <div class="flex flex-wrap justify-between items-center default-width h-24">
+        <div class="flex flex-col">
+            <a href="/" class="cursor-pointer text-2xl lg:text-3xl flex relative">
                 <div>
-                    <div class="text-2xl text-primary">JAM</div>
+                    <div class="text-2xl text-complementary-dark">JAM</div>
                     <div class="text-2xl text-spice font-bold">SLICK</div>
                 </div>
                 {#if showFixedNav }
-                <div in:fly="{{ x: -100, duration: 500 }}" out:fade="{{	duration: 100}}" class="mb-auto">
-                <svg width="40" height="60" preserveAspectRatio="xMinYMin meet" viewBox="0 0 55 100">
-                    <use xlink:href="/uploads/brand-logo.svg#brand-vertical" />
-                </svg>
-                </div>
-                    {/if}
+                    <div in:fly="{{ x: -100, duration: 500 }}" out:fade="{{	duration: 100}}" class="mb-auto">
+                        <svg width="40" height="60" preserveAspectRatio="xMinYMin meet" viewBox="0 0 55 100">
+                            <use xlink:href="/uploads/brand-logo.svg#brand-vertical"/>
+                        </svg>
+                    </div>
+                {/if}
             </a>
             {#if !showFixedNav}
-            <svg class="-bottom-2 absolute" in:fly="{{ y: -100, duration: 500 }}" out:fade="{{	duration: 100}}" width="80" height="28" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
-                <use xlink:href="/uploads/brand-logo.svg#brand-horizontal" />
-            </svg>
-                {/if}
+                <svg class="-bottom-2 absolute" in:fly="{{ y: -100, duration: 500 }}" out:fade="{{	duration: 100}}"
+                     width="80" height="28" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
+                    <use xlink:href="/uploads/brand-logo.svg#brand-horizontal"/>
+                </svg>
+            {/if}
         </div>
         <div class="flex lg:hidden pr-4">
             <button id="nav-toggle" class="flex">
@@ -73,16 +73,13 @@
                 </svg>
             </button>
         </div>
-            <ul class="hidden list-reset lg:flex justify-end flex-1 text-xl pt-2 {showFixedNav ? 'text-white' : 'text-black-light'}">
-            <li class="mr-3">
+        <ul class="hidden list-reset lg:flex justify-end flex-1 text-xl pt-2 ">
+            <li class="mr-12">
                 <div class="dropdown inline-block">
-                    <a href="about" class="relative animated-link py-2 px-4 rounded inline-flex items-center">
+                    <a href="#about-me" class="relative animated-link py-2 px-4 rounded inline-flex items-center">
                         About me
                     </a>
                 </div>
-            </li>
-            <li class="mr-3">
-                <a class="relative animated-link inline-block py-2 px-4 mr-4" href="contact">Projects</a>
             </li>
             <li class="mt-2">
                 <Button showArrow={true} color='bg-spice text-white' size="small">

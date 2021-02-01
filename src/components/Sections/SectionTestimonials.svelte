@@ -49,56 +49,55 @@
         padding: 20px;
         position: relative;
     }
-
-
 </style>
-<div class="flex flex-col default-width">
-    <h2>What people say about my work...</h2>
-    <div class="flex w-full h-80 w-80 lg:hidden">
-        <Swipeable numScreens="2" let:current bind:progress={introProgress}>
-            {#each testimonials as item,index}
-                <section class:current={current == index && zoomOut}>
-                    <div class="content"
-                         style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"
-                    >
-                        <div class="lg:flex w-full justify-center">
-                            <BorderdCard containerClass="bg-white">
-                                <div class="p-12 flex-col">
-                                    <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
-                                    <div class="mb-4">{item.text}</div>
-                                    <div class="text-spice">
-                                        {item.name}
+
+<div class="bg-tertiary lg:bg-white pb-24">
+    <div class="flex flex-col default-width p-4 lg:p-0 text-center bg-tertiary lg:bg-white lg:text-left">
+        <h2>What people say about my work...</h2>
+        <div class="flex w-full h-80 w-80 lg:hidden">
+            <Swipeable numScreens="2" let:current bind:progress={introProgress}>
+                {#each testimonials as item,index}
+                    <section class:current={current == index && zoomOut}>
+                        <div class="content"
+                             style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"
+                        >
+                            <div class="lg:flex w-full justify-center">
+                                <BorderdCard containerClass="bg-white">
+                                    <div class="p-12 flex-col">
+                                        <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
+                                        <div class="mb-4">{item.text}</div>
+                                        <div class="text-spice">
+                                            {item.name}
+                                        </div>
                                     </div>
-                                </div>
-                            </BorderdCard>
+                                </BorderdCard>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            {/each}
-        </Swipeable>
-    </div>
-
-    <div class="hidden lg:flex w-full justify-center">
-        {#each testimonials as item}
-            <div class="lg:mr-12">
-            <BorderdCard containerClass="bg-white">
-                <div class="p-12 flex-col">
-                    <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
-                    <div class="mb-4">{item.text}</div>
-                    <div class="text-spice">
-                        {item.name}
-                    </div>
+                    </section>
+                {/each}
+            </Swipeable>
+        </div>
+        <div class="hidden lg:flex w-full justify-center">
+            {#each testimonials as item}
+                <div class="lg:mr-12">
+                    <BorderdCard containerClass="bg-white">
+                        <div class="p-12 flex-col">
+                            <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
+                            <div class="mb-4">{item.text}</div>
+                            <div class="text-spice">
+                                {item.name}
+                            </div>
+                        </div>
+                    </BorderdCard>
                 </div>
-            </BorderdCard>
-            </div>
-        {/each}
+            {/each}
+        </div>
     </div>
-
-</div>
-<div class="flex justify-center mt-12 ">
-    <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
-        <slot>
-            Get in touch
-        </slot>
-    </Button>
+    <div class="flex justify-center mt-12">
+        <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
+            <slot>
+                Get in touch
+            </slot>
+        </Button>
+    </div>
 </div>

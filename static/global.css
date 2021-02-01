@@ -785,6 +785,7 @@ video {
 
 @media (min-width: 768px) {
   .default-width {
+    padding: 0px;
     width: 75%;
   }
 }
@@ -914,12 +915,12 @@ body {
   height: 100%;
   padding-top:5rem;
   background-repeat: repeat;
+  font-size: 1.125rem;
+  line-height: 1.75rem
 }
 
 #footer{
   bottom:0;
-  height:250px;
-  background-image: url('/uploads/background-raster.png');
   background-repeat: repeat;
 }
 

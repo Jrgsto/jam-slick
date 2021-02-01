@@ -23,10 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Form/Form.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess/SectionProcess.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess/TextBox.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/uploads/linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/HeaderBox.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/Button.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionProcess.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/includes/Footer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Footer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_layout.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +60,7 @@
         <option value="JavaScript File" />
         <option value="Swipeable.svelte" />
         <option value="BorderdCard.svelte" />
+        <option value="Form.svelte" />
       </list>
     </option>
   </component>
@@ -68,25 +86,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/uploads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Sections/SectionProcess" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Sections/SectionProcess" />
       <recent name="$PROJECT_DIR$/static/uploads" />
       <recent name="$PROJECT_DIR$/src/components/Cards" />
       <recent name="$PROJECT_DIR$/src/components/Sections" />
       <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/Sections/SectionProcess" />
       <recent name="$PROJECT_DIR$/src/components/Templates/Others" />
       <recent name="$PROJECT_DIR$/src/components/Modals" />
       <recent name="$PROJECT_DIR$/src/components/Cards" />
       <recent name="$PROJECT_DIR$/src/components/Buttons" />
-      <recent name="$PROJECT_DIR$/src/components/Templates/Sections" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -142,7 +160,13 @@
       <workItem from="1611243646012" duration="12441000" />
       <workItem from="1611309448868" duration="12000" />
       <workItem from="1611416026350" duration="1395000" />
-      <workItem from="1611474137480" duration="18246000" />
+      <workItem from="1611474137480" duration="18879000" />
+      <workItem from="1611904546342" duration="269000" />
+      <workItem from="1611905202106" duration="3975000" />
+      <workItem from="1611923994635" duration="629000" />
+      <workItem from="1611997225396" duration="18598000" />
+      <workItem from="1612022523678" duration="1771000" />
+      <workItem from="1612166584537" duration="19134000" />
     </task>
     <servers />
   </component>

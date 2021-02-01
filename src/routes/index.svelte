@@ -15,9 +15,10 @@
     import SectionHeader from "components/Sections/SectionHeader.svelte";
     import SectionBenefits from "components/Sections/SectionBenefits.svelte";
     import SectionServices from "components/Sections/SectionServices.svelte";
-    import SectionProcess from "components/Sections/SectionProcess.svelte";
+    import SectionProcess from "components/Sections/SectionProcess/SectionProcess.svelte";
     import SectionAboutMe from "components/Sections/SectionAboutMe.svelte";
     import SectionTestimonials from "components/Sections/SectionTestimonials.svelte";
+    import Form from "components/Form/Form.svelte";
 </script>
 
 {#if $showForm}
@@ -36,14 +37,8 @@
         <SectionHeader/>
         <SectionBenefits></SectionBenefits>
         <SectionServices></SectionServices>
-        <div class="bg-arrow">
-        <div class="bg-left-2 relative">
-        </div>
-            <div class="bg-right-2"></div>
         <SectionProcess></SectionProcess>
-        </div>
-        <SectionAboutMe></SectionAboutMe>
-        <div class="bg-left-1"></div>
+        <SectionAboutMe ></SectionAboutMe>
         <SectionTestimonials></SectionTestimonials>
     </div>
 </div>

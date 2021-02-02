@@ -247,19 +247,19 @@
 
 <!--Mobile Swiper-->
 <div class="flex flex-col lg:hidden bg-tertiary py-12">
-    <h2 class="text-center lg:text-left">And can help you with other stuff, too...</h2>
+    <h2 class="text-center lg:text-left p-4 lg:p-0">And can help you with other stuff, too...</h2>
     <div style="height:{offSetMobil + padding + 'px'};"
          class="container-height flex w-full justify-center bg-tertiary lg:hidden">
         <Swipeable numScreens="3" let:current bind:progress={introProgress}>
             {#each data as dataItem,index}
-                <div class="dots">
+                <div class="dots mt-2">
                     <div class="dot dot-active" style="left: {$introProgress * 21}px"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                 </div>
                 <section class:current={current == index && zoomOut}>
-                    <div bind:offsetHeight={offsetHeightMobile} class="content"
+                    <div bind:offsetHeight={offsetHeightMobile} class="content mt-8"
                          style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"
                     >
                         <div bind:offsetHeight={offsetHeightMobileHeader}

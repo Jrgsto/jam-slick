@@ -58,7 +58,7 @@
 
 </style>
 
-<div class="flex flex-col lg:flex-row default-width justify-between mb-24 lg:mb-44 relative"><span id="about-me"></span>
+<div class="flex flex-col lg:flex-row default-width justify-between lg:mb-44 relative"><span id="about-me"></span>
     <div class="flex flex-col lg:w-1/2 lg:mr-12 ">
         <div class="flex flex-col lg:flex-row mb-12 justify-center items-center">
             <div class="w-44 h-44 rounded-full overflow-hidden shadow-lg text-center m-auto table mb-8 lg:mb-0 lg:mr-8">
@@ -116,10 +116,10 @@
             </BorderdCard>
         </div>
     </div>
-        <div class="flex flex-col w-96 items-center m-auto lg:m-0 lg:mx-auto">
-        <div class=" p-8 text-center text-2xl">Let's talk!</div>
+    <div class="p-8 flex flex-col lg:w-96 items-center">
+        <div class="py-8 text-center text-2xl">Let's talk!</div>
         <hr class="w-1/2"/>
-        <div class="p-8 bg-opacity-20 text-center">
+        <div class="py-8 bg-opacity-20 text-center">
             <a href="contact" class="relative cursor-pointer animated-link font-bold hover:font-bold pb-1">Get in
                 contact</a> and let's
             see how I might help you with your project!
@@ -130,7 +130,8 @@
                     Get in touch
                 </slot>
             </Button>
-            <div class="justify-center pt-2 flex items-center">Because I <span class="text-red text-3xl pr-1">&#10084;</span> what I do
+            <div class="pt-2 flex justify-center items-center">Because I <span
+                    class="text-red text-3xl pr-1">&#10084;</span> what I do
             </div>
         </div>
     </div>

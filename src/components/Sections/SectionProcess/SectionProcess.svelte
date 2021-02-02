@@ -90,9 +90,9 @@
 <div class="flex flex-col lg:hidden mb-32 bg-tertiary py-12">
     <h2 class="text-center lg:text-left">Interested? These are the next steps...</h2>
     <div class="flex flex-col">
-        <div class="bg-complementary-dark text-white p-8 m-4 text-center shadow-lg">
+        <div class="bg-complementary-dark text-white p-8 m-4 text-center">
             <div>1. Let's get to know each other</div>
-            <div class="bg-spice shadow-lg text-white m-auto p-2 mt-4 flex justify-center">
+            <div class="bg-spice text-white m-auto p-2 mt-4 flex justify-center shadow-lg">
                 <div>Schedule a free call</div>
                 <svg class="ml-2" width="25" height="18" viewBox="0 0 88 37" preserveAspectRatio="xMinYMax meet">
                 <use xlink:href="/uploads/arrow.svg#arrow" />
@@ -100,10 +100,10 @@
             </div>
         </div>
 
-        <div class="bg-primary-dark text-white p-8 m-4 text-center shadow-lg">
+        <div class="bg-primary-dark text-white p-8 m-4 text-center">
             2. Define the project goals, scope and requirements
         </div>
-        <div class="bg-complementary text-white p-8 m-4 text-center shadow-lg ">
+        <div class="bg-complementary text-white p-8 m-4 text-center ">
             3. Mapping out detailed Projectroadmap
         </div>
     </div>

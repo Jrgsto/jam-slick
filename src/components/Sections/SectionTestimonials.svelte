@@ -86,7 +86,7 @@
                         <div class="dot"></div>
                     </div>
                     <section class:current={current == index && zoomOut}>
-                        <div class="content"
+                        <div class="content mt-8"
                              style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"
                         >
                             <div class="lg:flex w-full justify-center">
@@ -120,12 +120,5 @@
                 </div>
             {/each}
         </div>
-    </div>
-    <div class="flex justify-center mt-12">
-        <Button showArrow={true} color="mt-24 bg-spice text-white z-30">
-            <slot>
-                Get in touch
-            </slot>
-        </Button>
     </div>
 </div>

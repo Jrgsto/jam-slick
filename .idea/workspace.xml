@@ -24,13 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionHeader.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionProcess/SectionProcess.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess/SectionProcess.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/includes/Nav.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/includes/Nav.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +152,7 @@
       <workItem from="1612022523678" duration="1771000" />
       <workItem from="1612166584537" duration="20305000" />
       <workItem from="1612260212715" duration="618000" />
-      <workItem from="1612272452867" duration="754000" />
+      <workItem from="1612272452867" duration="1472000" />
     </task>
     <servers />
   </component>

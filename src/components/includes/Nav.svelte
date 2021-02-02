@@ -8,15 +8,7 @@
     let showFixedNav = false;
 
     function changeClass(y) {
-        if (y > height) {
-            showFixedNav = true;
-            return "shadow-lg"
-
-        } else {
-            showFixedNav = false;
-            return "bg-white";
-        }
-
+        showFixedNav = y > height;
     }
 
     const toggleDropdown = () => {
@@ -42,8 +34,8 @@
     }
 </style>
 
-<nav id="header" class="header-fix {headerClass} {!showFixedNav ? 'bg-tertiary' : 'bg-tertiary'}">
-    <div class="flex flex-wrap justify-between items-center default-width h-24">
+<nav id="header" class="header-fix {!showFixedNav ? 'bg-transparent' : 'shadow-lg bg-tertiary'}">
+    <div class="flex flex-wrap justify-between items-center default-width h-24 p-4 lg:p-0">
         <div class="flex flex-col">
             <a href="/" class="cursor-pointer text-2xl lg:text-3xl flex relative">
                 <div>

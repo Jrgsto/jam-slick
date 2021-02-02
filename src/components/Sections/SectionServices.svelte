@@ -180,17 +180,17 @@
     }
 
     .dot {
-        background: #444;
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         margin: 0 3px;
         border-radius: 8px;
         display: inline-block;
+        @apply bg-white;
     }
 
     .dot.dot-active {
         position: absolute;
-        background: #efefef;
+        @apply bg-complementary-dark;
     }
 
 
@@ -253,7 +253,7 @@
         <Swipeable numScreens="3" let:current bind:progress={introProgress}>
             {#each data as dataItem,index}
                 <div class="dots">
-                    <div class="dot dot-active" style="left: {$introProgress * 18}px"></div>
+                    <div class="dot dot-active" style="left: {$introProgress * 21}px"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>

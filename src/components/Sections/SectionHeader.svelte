@@ -17,7 +17,7 @@
 
 
 </style>
-<div class="lg:h-screen flex flex-wrap bg-image">
+<div class="lg:h-screen flex flex-wrap bg-image pt-24">
     <div class="flex default-width text-center lg:text-left justify-center items-center lg:justify-start lg:mt-28">
         <div class="text-black-light flex flex-col py-8 lg:py-0 lg:w-2/3">
             <h2 class="z-40 text-complementary-dark text-3xl lg:text-5xl">Focus on what matters<br/> to your business.

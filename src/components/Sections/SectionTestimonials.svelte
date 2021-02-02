@@ -49,6 +49,29 @@
         padding: 20px;
         position: relative;
     }
+
+    .dots {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        line-height: 0;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
+        border-radius: 8px;
+        display: inline-block;
+        @apply bg-white;
+    }
+
+    .dot.dot-active {
+        position: absolute;
+        @apply bg-complementary-dark;
+    }
+
 </style>
 
 <div class="bg-tertiary lg:bg-white pb-24">
@@ -57,6 +80,11 @@
         <div class="flex w-full h-80 w-80 lg:hidden">
             <Swipeable numScreens="2" let:current bind:progress={introProgress}>
                 {#each testimonials as item,index}
+                    <div class="dots">
+                        <div class="dot dot-active" style="left: {$introProgress * 21}px"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                     <section class:current={current == index && zoomOut}>
                         <div class="content"
                              style="right: {100 * ($introProgress - index)}%; opacity: {1 - Math.abs($introProgress - index)}"

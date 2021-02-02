@@ -41,7 +41,7 @@ module.exports = {
             },
             // not used
             tertiary: {
-                DEFAULT: '#EDECEA'
+                DEFAULT: '#ebebeb'
             }
         },
         fontFamily: {

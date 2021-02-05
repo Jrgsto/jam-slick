@@ -1,6 +1,7 @@
 <script>
     import SpeechBubble from "../SpeechBubble.svelte";
     import {onMount} from 'svelte';
+
     let offsetHeight;
     let offsetWidth;
 
@@ -16,18 +17,13 @@
     })
 
 
-
-
 </script>
 <style type="postcss">
 
-    p {
-        @apply font-normal text-white;
-    }
 
     @keyframes scale {
         0% {
-            transform:  scale(0.0);
+            transform: scale(0.0);
             opacity: 0;
         }
         100% {
@@ -53,30 +49,16 @@
         margin-bottom: 30px;
     }
 
-    @keyframes pulse {
-        0% {
-            transform: scale(0.95);
-        }
-
-        70% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(0.95);
-        }
-    }
-
-
 </style>
-<div bind:offsetHeight={offsetHeight} bind:offsetWidth={offsetWidth} class="lg:default-spacing-left flex flex-col lg:flex-row lg:justify-end lg:items-end relative w-full mb-24">
-        <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
-            <SpeechBubble colorSchema="bg-spice" box=" sb3 hidden h-full">
-                <p slot="front">What is the goal of my website?</p>
-                <p slot="back">Let's analyze your business requirements and set up the right purpose for your website.
-                </p>
-            </SpeechBubble>
-        </div>
+<div bind:offsetHeight={offsetHeight} bind:offsetWidth={offsetWidth}
+     class="lg:default-spacing-left flex flex-col lg:flex-row lg:justify-end lg:items-end relative w-full mb-24">
+    <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
+        <SpeechBubble colorSchema="bg-primary-dark" box=" sb3 hidden h-full">
+            <p slot="front">What is the goal of my website?</p>
+            <p slot="back">Let's analyze your business requirements and set up the right purpose for your website.
+            </p>
+        </SpeechBubble>
+    </div>
     <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
         <SpeechBubble colorSchema="bg-complementary" box="w-full sb1 hidden h-full">
             <p slot="front">What is the right
@@ -86,19 +68,22 @@
             </p>
         </SpeechBubble>
     </div>
-        <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
-            <SpeechBubble colorSchema="bg-complementary-dark" box="sb2 hidden h-full">
-                <p slot="front">What technology should I use?</p>
-                <p slot="back">We will clear up the technology jungle and find the technology that suits your needs.
-                </p>
-            </SpeechBubble>
-        </div>
-        <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
-            <SpeechBubble colorSchema="bg-primary-light" box="sb4 hidden h-full">
-                <p slot="front">What else?</p>
-                <p slot="back">There is a lot more to make your website a success. But I will make sure we cover it all.<br/>
-                    <a href="contact" class="font-extrabold text-complementary-dark relative cursor-pointer animated-link font-bold hover:font-bold pb-1">Let get in touch.</a>
-                </p>
-            </SpeechBubble>
-        </div>
+    <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
+        <SpeechBubble colorSchema="bg-complementary-dark" box="sb2 hidden h-full">
+            <p slot="front">What technology should I use?</p>
+            <p slot="back">We will clear up the technology jungle and find the technology that suits your needs.
+            </p>
+        </SpeechBubble>
+    </div>
+    <div class="slide-animated pb-4 lg:pb-0 lg:pr-8 lg:w-1/4 h-40">
+        <SpeechBubble colorSchema="bg-spice-light" box="sb4 hidden h-full">
+            <p slot="front">What else?</p>
+            <p slot="back">There is a lot more to make your website a success. But I will make sure we cover it
+                all.<br/>
+                <a href="contact"
+                   class="font-extrabold text-complementary-dark relative cursor-pointer animated-link font-bold hover:font-bold pb-1">Let
+                    get in touch.</a>
+            </p>
+        </SpeechBubble>
+    </div>
 </div>

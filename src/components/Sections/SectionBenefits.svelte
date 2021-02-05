@@ -4,7 +4,7 @@
 
 
 </script>
-<div class="default-width flex flex-col lg:flex-row items-center justify-between lg:mb-44">
+<div class="default-width flex flex-col lg:flex-row items-center justify-between lg:my-44">
     <div class="relative flex lg:w-1/2 ">
         <BorderedCard containerClass="bg-tertiary">
             <div class="default-width flex-col flex py-16 px-8 ">

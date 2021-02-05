@@ -108,7 +108,7 @@
         <div class="hidden lg:flex w-full justify-center">
             {#each testimonials as item}
                 <div class="lg:mr-12">
-                    <BorderdCard containerClass="bg-white">
+                    <BorderdCard containerClass="bg-tertiary">
                         <div class="p-12 flex-col">
                             <img alt="quote image" class="mb-4 " src="/uploads/quote.svg"/>
                             <div class="mb-4">{item.text}</div>

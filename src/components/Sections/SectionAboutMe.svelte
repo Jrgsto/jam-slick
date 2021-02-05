@@ -73,7 +73,7 @@
                     websites that converts potential in actual customers.
                     </p>
                     <p class="py-2">My attitude towards work? Work should be fun.</p>
-                    <p class="p-0">Cant wait to hear from you soon!</p>
+                    <p class="p-0">I can't wait to hear from you soon!</p>
                 </div>
             </div>
         </div>
@@ -88,8 +88,9 @@
                 </div>
             {/each}
         </div>
-        <div transition:fade class="lg:block lg:py-12">
-            <BorderdCard containerClass="p-12 bg-complementary-dark text-white lg:text-black lg:bg-tertiary">
+        <hr class="mt-8"/>
+        <div transition:fade class="lg:block lg:py-8">
+            <div>
                 {#if contentToShow === 'background'}
                     <p class="p-0">Having worked five years as a marketer before becoming a fullstack developer I combine the best
                         out of the two areas: Designing a website based on your customer needs while using state of the
@@ -113,10 +114,10 @@
                 {#if contentToShow === 'process'}
                     <p class="p-0">I keep a positive beginners mindset. I am reliable and self-responsible. I trust and respect people. I am patient. I am curious. I like to understand. I like transparency. I like to craft (code). I want to learn and grow. I like balance. I enjoy life.</p>
                 {/if}
-            </BorderdCard>
+            </div>
         </div>
     </div>
-    <div class="p-8 flex flex-col lg:w-96 items-center">
+    <div class="p-8 flex flex-col lg:w-96 items-center mx-auto">
         <div class="py-8 text-center text-2xl">Let's talk!</div>
         <hr class="w-1/2"/>
         <div class="py-8 bg-opacity-20 text-center">

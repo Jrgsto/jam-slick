@@ -220,27 +220,30 @@
 
 
         <div class="flex w-full lg:w-3/4 relative hidden lg:block">
-            <BorderdCard containerClass="custom-height bg-tertiary">
+<!--            <BorderdCard containerClass="custom-height bg-tertiary">-->
+            <div class="custom-height">
                 {#each data as dataItem,index}
                     {#if activeElement.id === dataItem.id}
                         <div class="flex flex-col p-12">
-                            <div class="-ml-12 mr-auto bg-spice shadow-lg text-white py-2 px-4 mb-8">
+                            <div class="mr-auto bg-complementary-dark text-white py-2 mb-4 px-4">
                                 {dataItem.type}
                             </div>
+                            <hr class="w-1/2 mb-4"/>
                             <div style="background-image:url({activeElement.img})" class="bg-img">
                                 {#each dataItem.items as item}
                                     <div class="font-bold text-lg relative">{item.title}
                                     </div>
                                     <div class="p-2 flex">
                                         <img class="h-4 mr-2 " alt="arrow-down" src="/uploads/arrow-down-right.svg"/>
-                                        <div class="mb-4">{item.result}</div>
+                                        <div class="mb-8">{item.result}</div>
                                     </div>
                                 {/each}
                             </div>
                         </div>
                     {/if}
                 {/each}
-            </BorderdCard>
+            </div>
+<!--            </BorderdCard>-->
         </div>
     </div>
 </div>

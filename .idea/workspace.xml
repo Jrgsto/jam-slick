@@ -24,10 +24,17 @@
   <component name="ChangeListManager">
     <list default="true" id="2d084e4c-ea2c-444f-8b79-3790846babd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form/Form.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form/Form.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionAboutMe.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionProcess/SectionProcess.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionProcess/SectionProcess.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionBenefits.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionServices.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionTestimonials.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sections/SectionWebsite.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SpeechBubble.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/_layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/admin/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,15 +77,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.18.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.19.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Sections/SectionProcess" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/uploads" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/Sections/SectionProcess" />
       <recent name="$PROJECT_DIR$/static/uploads" />
+      <recent name="$PROJECT_DIR$/src/components/Sections/SectionProcess" />
       <recent name="$PROJECT_DIR$/src/components/Cards" />
       <recent name="$PROJECT_DIR$/src/components/Sections" />
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -152,7 +159,9 @@
       <workItem from="1612022523678" duration="1771000" />
       <workItem from="1612166584537" duration="20305000" />
       <workItem from="1612260212715" duration="618000" />
-      <workItem from="1612272452867" duration="1472000" />
+      <workItem from="1612272452867" duration="4523000" />
+      <workItem from="1612343113684" duration="6000" />
+      <workItem from="1612513379604" duration="797000" />
     </task>
     <servers />
   </component>

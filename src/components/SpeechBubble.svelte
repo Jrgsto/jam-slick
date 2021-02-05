@@ -10,11 +10,11 @@
         case "bg-complementary-dark":
             color = '#59739B';
             break;
-        case "bg-spice":
-            color = '#ED6A5A';
+        case "bg-primary-dark":
+            color = '#D17428';
             break;
-        case "bg-primary-light":
-            color = '#FFBC8C';
+        case "bg-spice-light":
+            color = '#FFD247';
             break;
         default:
             color = 'var(--bgColor)';
@@ -23,10 +23,10 @@
 
 <div class="box1 {box} bg-primary-light z-30 flex items-center justify-center">
     <div class="flip-card-inner shadow-lg cursor-default">
-        <div style="--color: {color}; --bgColor: {bgColor}" class="flip-card-front flex items-center justify-center p-4">
+        <div style="--color: {color}" class="flip-card-front flex items-center justify-center p-4">
             <slot name="front"></slot>
         </div>
-        <div style="--color: {color}; --bgColor: {bgColor}" class="flip-card-back flex items-center justify-center p-4">
+        <div style="--color: {color}" class="flip-card-back flex items-center justify-center p-4">
             <slot name="back"></slot>
         </div>
     </div>
@@ -37,7 +37,6 @@
     .box1 {
         text-align: center;
         background-color:transparent;
-        font-weight: 900;
         position: relative;
         height: 100%;
         width: 100%;
@@ -130,13 +129,11 @@
     /* Style the front side (fallback if image is missing) */
     .flip-card-front {
         background-color: var(--color);
-        color: black;
     }
 
     /* Style the back side */
     .flip-card-back {
         background-color: var(--color);
-        color: white;
         transform: rotateY(180deg);
     }
 

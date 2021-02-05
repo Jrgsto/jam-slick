@@ -37,10 +37,9 @@
     const sendForm = () => {
         isLoading = true;
         if (validateForm()) {
-            setTimeout(function () {
+          // TODO -  Send form
                 showSuccess = true;
                 isLoading = false;
-            }, 2000);
         } else {
             isLoading = false;
             showError = true;
@@ -52,10 +51,7 @@
     }
     const closeForm = (redirect = true) => {
         if (redirect) window.open("https://jam-slick.youcanbook.me", "_blank");
-
-        setTimeout(function () {
-            $showForm = false;
-        }, 1000);
+        $showForm = false;
 
     }
     let selected = 1;
